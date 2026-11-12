@@ -1,1 +1,24 @@
-{"name":"Ronda — Visita de Enfermagem (demonstração)","short_name":"Ronda","description":"Protótipo demonstrativo de visita e evolução de enfermagem","start_url":"./index.html","scope":"./","display":"standalone","background_color":"#edf3f6","theme_color":"#10344c","icons":[{"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},{"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+{
+  "name": "Ronda — Visita de Enfermagem v3",
+  "short_name": "Ronda",
+  "description": "Protótipo de avaliação, dispositivos, pendências e evolução de enfermagem",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#edf3f6",
+  "theme_color": "#123d49",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
