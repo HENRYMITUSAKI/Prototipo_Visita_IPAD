@@ -1,0 +1,721 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#123d49"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Ronda"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Ronda · Visita de enfermagem v4</title><style>:root{font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#183b48;background:#eff4f5;--ink:#163d49;--teal:#087f83;--line:#d8e4e8;--muted:#607d86;--pale:#e4f3f1;--orange:#935011}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit;color:inherit}button,a,input,select,textarea{touch-action:manipulation}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #35b5bf;outline-offset:3px}input,select,textarea{width:100%;min-width:0;border:1px solid #bacfd7;background:white;border-radius:9px;padding:11px;min-height:44px;font-size:16px}textarea{min-height:90px;resize:vertical}input[type=checkbox]{width:20px;height:20px;min-height:20px;accent-color:var(--teal)}a{color:#08777f}h1,h2,h3,p{margin:0}h1{font-size:28px;letter-spacing:-.6px}h2{font-size:20px;letter-spacing:-.3px}h3{font-size:16px}.shell{display:grid;grid-template-columns:215px minmax(0,1fr);min-height:100vh}aside{background:#123d49;color:#fff;padding:28px 14px;position:sticky;top:0;height:100vh}.brand{font-size:28px;font-weight:800;letter-spacing:-1px;padding:0 12px;margin-bottom:35px}.brand span{color:#7ed8c5}.brand small{display:block;font-size:11px;font-weight:500;letter-spacing:1px;color:#c4dddf;margin-top:5px}.nav{display:block;border:0;background:none;color:#cce0e3;text-align:left;width:100%;padding:13px 15px;border-radius:10px;margin:5px 0;font-weight:650}.nav.active{background:#255e69;color:white}.sidefoot{position:absolute;bottom:25px;padding:10px;font-size:11px;color:#b2ced1}main{width:100%;max-width:1300px;margin:0 auto;padding:30px 32px 95px;min-width:0}.top{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:20px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:750;color:var(--teal);margin-bottom:6px}.muted{color:var(--muted);font-size:13px}.top p{margin-top:6px}.card{background:white;border:1px solid var(--line);border-radius:15px;margin-bottom:16px;padding:22px;box-shadow:0 3px 12px #103a4810}.toolbar,.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.toolbar{justify-content:space-between}.actions{margin-top:14px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:9px;background:var(--teal);color:white;padding:11px 16px;min-height:44px;font-weight:700;text-decoration:none}.btn.secondary{background:var(--pale);color:#08656c}.btn.ghost{background:white;border:1px solid #bacecf;color:var(--ink)}.btn.danger{background:#fff0ec;color:#a23821}.btn.small{font-size:12px;min-height:40px;padding:8px 12px}.badge{display:inline-flex;align-items:center;background:#e1f2ed;color:#126d51;padding:5px 9px;font-size:11px;font-weight:700;border-radius:7px}.badge.warn{background:#fff1db;color:#96530d}.badge.dim{background:#edf2f3;color:#647d87}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.full{grid-column:1/-1}.field{margin:9px 0;min-width:0}.field>label,.field>legend{display:block;font-size:12px;font-weight:750;margin-bottom:7px;color:#43626f}.field small{display:block;font-size:11px;color:var(--muted);margin-top:5px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid #c8d9df;border-radius:8px;padding:9px 12px;min-height:42px;background:#fff;font-size:13px;text-align:left}.chip.selected{border-color:var(--teal);background:#dcf3ee;color:#095e65;box-shadow:inset 0 0 0 1px var(--teal)}.chip.clear{color:#82979f;border-style:dashed;padding:7px 10px}.check{display:flex;align-items:center;gap:9px;min-height:44px;cursor:pointer;font-size:14px}.check input{flex-shrink:0}.section{scroll-margin-top:20px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:12px;border-bottom:1px solid #e7eef0;margin-bottom:12px}.section-head h2 span{color:#5d9b9f;font-size:12px;margin-right:10px}.nested{background:#f4f9f9;padding:16px;border:1px solid #d8e9e7;border-radius:11px;margin:12px 0}.repeater{border:1px solid #d5e3e7;border-radius:11px;padding:16px;margin:12px 0;background:#fff}.repeater>header{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid #e8eff1;padding-bottom:9px;margin-bottom:10px}.repeater h3{font-size:15px}.summary{cursor:pointer;padding:12px 0;font-weight:650}.note{padding:12px 14px;background:#f2f8f8;border-radius:9px;font-size:12px;color:#4b6b73;margin:12px 0}.notice{background:#fff6e5;border:1px solid #f1d7ac;color:#7f5115;border-radius:10px;padding:12px 15px;font-size:13px;margin:12px 0}.notice.error{background:#fff1ed;color:#9a3423;border-color:#edc4b8}.notice ul{padding-left:22px;margin:8px 0}.sticky{position:sticky;bottom:0;z-index:4;display:flex;gap:12px;align-items:center;justify-content:space-between;background:#eff4f5f5;backdrop-filter:blur(10px);padding:12px 0}.sticky .actions{margin:0}.patient{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #e2ebed;padding:16px 0;gap:12px}.patient:first-child{border-top:0}.patient strong{font-size:17px;display:block}.patient small{display:block;color:var(--muted);margin-top:4px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}.stat{background:white;border:1px solid var(--line);padding:19px;border-radius:12px}.stat strong{display:block;font-size:31px}.stat span{font-size:12px;color:var(--muted)}.jump{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}.jump a{border:1px solid #cfdee2;padding:7px 10px;border-radius:6px;font-size:12px;text-decoration:none;background:white}.relevant{font-size:11px;color:#8c5a24;font-weight:600}.relevant input{width:16px;height:16px;min-height:16px}.task{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #e1ebed}.task:last-child{border:0}.task p{font-size:14px}.task.done{opacity:.6}.report{font-size:15px;line-height:1.85;overflow-wrap:anywhere;padding:22px;background:#f8fbfb;border:1px solid #dce8e9;border-radius:10px}.report mark{background:#fff1cc;color:inherit;font-weight:650}.report pre{white-space:pre-wrap;font:inherit}.identity{border-left:4px solid var(--teal);padding:12px 15px;background:#edf8f6;margin:15px 0}.identity strong{display:block;font-size:18px}.modal-bg{position:fixed;inset:0;background:#14343f88;z-index:30;display:flex;align-items:center;justify-content:center;padding:20px}.modal{background:white;border-radius:17px;width:min(720px,100%);max-height:90vh;overflow:auto;padding:25px}.modal.wide{width:min(950px,100%)}.modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:50;background:#163d49;color:white;padding:12px 20px;border-radius:10px;box-shadow:0 5px 20px #0002;max-width:90vw;font-size:13px}.empty{padding:30px;text-align:center;color:var(--muted)}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid var(--line);padding:10px;text-align:left}fieldset{border:0;padding:0;min-width:0}summary{cursor:pointer}details>summary{font-weight:650;padding:10px 0}.version{font-size:11px;color:#7fa9ad}.no-print{}.only-print{display:none}.print-signature{margin-top:20px}.selected-patient{border-left:4px solid var(--teal)}
+@media(max-width:1000px){main{padding:24px 20px 80px}.shell{grid-template-columns:175px 1fr}.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.shell{display:block}aside{height:auto;position:sticky;top:0;z-index:10;display:flex;overflow-x:auto;padding:6px;gap:3px}.brand{font-size:18px;margin:0 8px;padding:8px 0;white-space:nowrap}.brand small,.sidefoot{display:none}.nav{width:auto;white-space:nowrap;padding:10px;font-size:12px;margin:0}.top{align-items:flex-start}h1{font-size:24px}main{padding:20px 12px 80px}.card{padding:16px}.section{scroll-margin-top:70px}.grid,.grid.three{grid-template-columns:1fr}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:26px}.stat span{font-size:10px}.patient{align-items:flex-start;flex-direction:column}.patient .actions{margin:0}.modal-bg{padding:10px}.modal{max-height:92vh;padding:18px}.sticky{flex-wrap:wrap}.report{padding:15px}.chip{min-height:44px}.top>.badge{display:none}.identity strong{font-size:16px}}
+@media print{body{background:white}.shell{display:block}aside,.top,.no-print,.sticky,.modal-bg,.toast,.print-hide{display:none!important}main{max-width:none;padding:0}.card{box-shadow:none;border:0;padding:0}#app main>section:not(.print-target){display:none!important}.report{border:0;background:white;padding:0;font-size:11pt;line-height:1.5}.report mark{background:none;font-weight:normal}.identity{background:white;border:0;padding:0;margin:0 0 14px}.only-print{display:block}.print-target{display:block!important}.print-target .toolbar{display:none}.batch-item{break-after:page}.batch-item:last-child{break-after:auto}@page{margin:16mm}}
+
+/* Cards de pacientes, pendências e avaliações rápidas */
+.patient-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;align-items:start}
+.patient-card{margin:0;min-width:0;display:flex;flex-direction:column;gap:12px;padding:20px;overflow-wrap:anywhere}
+.patient-card header{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:space-between}
+.patient-card h3{font-size:20px;line-height:1.25;letter-spacing:-.3px}
+.bed-number{display:inline-flex;align-items:center;justify-content:center;padding:7px 12px;border-radius:11px;background:#e0f2ef;color:#095e65;font-size:26px;font-weight:800;letter-spacing:-.8px}
+.patient-card .actions{margin-top:0;gap:7px}.patient-card .field{margin:0}
+.patient-card .actions>.btn:first-child{flex:1;min-width:140px}.patient-card .actions>.btn{min-height:42px}
+.patient-card-status{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.patient-card-status small{display:block;color:var(--muted);font-size:11px}
+.deleted-patient{background:#f7f8fa;border-style:dashed}
+.palliative-indicator{display:inline-flex;align-items:center;vertical-align:middle;gap:7px;flex:none}
+.palliative-dot{display:inline-block;width:12px;height:12px;background:#8d49c3;border-radius:50%;box-shadow:0 0 0 3px #f0e5fa}
+.blue-butterfly{display:inline-block;width:28px;height:28px;overflow:visible}
+.fasting-reminder{display:flex;align-items:center;gap:9px;background:#fff4df;border:1px solid #ecd19d;border-left:4px solid #df9d2e;padding:10px 12px;border-radius:9px;color:#755017;font-size:12px;overflow-wrap:anywhere}
+.fasting-reminder strong{font-size:11px;letter-spacing:.06em;flex:none}.fasting-reminder span{min-width:0}
+.task-patient-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.task-patient-card{margin:0;min-width:0}.task-patient-card .toolbar{align-items:start}.task-patient-card h2{font-size:18px;margin:8px 0}
+.task-patient-card .bed-number{font-size:22px}.task-cards{display:grid;gap:10px;margin-top:15px}
+.task.task-card{margin:0;padding:13px;background:#f5f9fa;border:1px solid #d8e5e9;border-left:3px solid #4f9b9f;border-radius:10px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;overflow-wrap:anywhere}
+.task-card p{line-height:1.4}.task-card .btn{min-height:38px;padding:7px 9px;font-size:11px}.task-card small{font-size:10px}
+.quick-assessment{margin:12px 0}.quick-assessment>.field>.chips>.chip{min-width:110px;justify-content:center;font-size:15px;font-weight:750;min-height:46px}
+.quick-assessment>.field>.chips>.chip.clear{min-width:40px;font-size:18px}
+.quick-assessment>.field>.chips>.chip[data-value="Normal"].selected{background:#def3e5;border-color:#29986a;color:#155d3d;box-shadow:inset 0 0 0 1px #29986a}
+.quick-assessment>.field>.chips>.chip[data-value="Alterado"].selected{background:#fff1da;border-color:#d89a42;color:#8b5416;box-shadow:inset 0 0 0 1px #d89a42}
+.quick-summary{padding:12px 15px;border:1px solid #c3e5d6;background:#effaf3;border-radius:9px;color:#226d4a;font-size:13px;line-height:1.5}
+.normal-help{display:block;font-size:11px;color:var(--muted);line-height:1.5;margin:5px 0 10px}
+.assessment-details{padding:4px 0}.companion-start{padding-top:16px;margin-top:16px;border-top:1px solid #dbe8e8}
+.companion-start h3{font-size:16px;color:var(--teal)}
+.report{background:white;line-height:1.6}.report pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:0}
+@media(max-width:850px){.task-patient-grid{grid-template-columns:1fr}.patient-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}}
+@media(max-width:520px){.patient-grid,.task-patient-grid{grid-template-columns:1fr}.patient-card{padding:18px}.task-patient-card{padding:17px}.quick-assessment>.field>.chips>.chip{min-width:100px}.selected-patient .toolbar .actions{width:100%}.sticky{flex-wrap:wrap}.sticky .actions{width:100%}.sticky .actions>.btn:last-child{flex:1}}
+@media print{.report{padding:0;border:0;background:white;line-height:1.45}.report pre{font-family:Arial,sans-serif;font-size:11pt;line-height:1.45}.patient-grid,.task-patient-grid{display:none}.report h3{break-after:avoid}}
+
+.patient-diagnosis{display:grid;gap:3px;padding:11px 13px;border:1px solid #cbdfe7;border-left:4px solid #39819a;border-radius:9px;background:#f0f7fb;overflow-wrap:anywhere}
+.patient-diagnosis strong{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#3d6e81}
+.patient-diagnosis span{font-size:14px;line-height:1.4;font-weight:650;color:#244b60}
+.selected-patient>.patient-diagnosis{margin-top:13px}
+.task-patient-card>.patient-diagnosis{margin-top:12px}
+</style></head><body><div id="app"></div><script>'use strict';
+const APP_VERSION='4.0.0';
+const STORAGE_KEY='ronda_demo_v3', OLD_KEY='ronda_demo_v2';
+const SECTORS=['UCG — Unidade Cardio Geral','UCPS — Unidade Cardio Pronto-Socorro','Pronto-socorro','UTI pós-operatória','UTI clínica','Unidade coronariana','Centro cirúrgico congênito','Centro cirúrgico adulto','Hemodinâmica'];
+const DEVICE_TYPES=['AVP','CVC','PICC','Cateter longo','Shilley','Permcath','Sonda enteral','Sonda gástrica','Sonda vesical','Cistostomia','Nefrostomia','Dreno','Tenckhoff','Outro'];
+const URINARY_DEVICES=['Sonda vesical','Cistostomia','Nefrostomia'];
+const VENOUS=['AVP','CVC','PICC','Cateter longo','Shilley','Permcath'];
+const SIDES=['Direita','Esquerda','Bilateral','Mediana','Não se aplica'];
+const SITES={
+ AVP:['Dorso da mão','Punho','Antebraço','Fossa antecubital','Braço','Dorso do pé','Tornozelo','Perna','Couro cabeludo','Outro'],
+ CVC:['Jugular interna','Jugular externa','Subclávia','Axilar','Femoral','Outro'],
+ PICC:['Basílica','Cefálica','Braquial','Axilar','Safena','Temporal','Auricular posterior','Outro'],
+ 'Cateter longo':['Basílica','Cefálica','Braquial','Antebraço','Braço','Outro'],
+ Shilley:['Jugular interna','Jugular externa','Subclávia','Femoral','Outro'],
+ Permcath:['Jugular interna','Subclávia','Femoral','Tórax','Outro'],
+ 'Sonda enteral':['Narina','Gastrostomia','Jejunostomia','Via oral','Outro'],
+ 'Sonda gástrica':['Narina','Via oral','Gastrostomia','Outro'],
+ 'Sonda vesical':[],
+ Cistostomia:['Região suprapúbica','Outro'],Nefrostomia:['Região lombar','Outro'],
+ Dreno:['Tórax','Mediastino','Abdome superior','Abdome inferior','Flanco','Pelve','Região cervical','Região lombar','Região inguinal','Ferida operatória','Outro'],
+ Tenckhoff:['Abdome','Pelve','Outro'],Outro:['Outro']
+};
+const BODY_SITES=['Região sacral','Trocânter','Calcanhar','Maléolo','Occipital','Escápula','Cotovelo','Ísquio','Região glútea','Dorso','Tórax','Abdome','Braço','Antebraço','Mão','Coxa','Perna','Pé','Face','Orelha','Narina','Região perineal','Outro'];
+const LUNG_SITES=['Lobo superior direito','Lobo médio direito','Lobo inferior direito','Lobo superior esquerdo','Lobo inferior esquerdo','Difuso bilateral'];
+const ABD_SITES=['Quadrante superior direito','Quadrante superior esquerdo','Quadrante inferior direito','Quadrante inferior esquerdo','Hipocôndrio direito','Epigástrio','Hipocôndrio esquerdo','Flanco direito','Mesogástrio / umbilical','Flanco esquerdo','Fossa ilíaca direita','Hipogástrio','Fossa ilíaca esquerda','Difusa'];
+const BRISTOL=['1 — Bolinhas duras separadas','2 — Cilindro com grumos','3 — Cilindro com fissuras','4 — Alongadas, lisas e macias','5 — Fragmentos macios, bordas definidas','6 — Pedaços pastosos, bordas irregulares','7 — Líquidas, sem partes sólidas'];
+const GCS={ao:['1|Sem abertura','2|Ao estímulo por pressão','3|Ao chamado','4|Espontânea','NT|Não testável'],rv:['1|Sem resposta','2|Sons','3|Palavras','4|Confusa','5|Orientada','NT|Não testável'],rm:['1|Sem resposta','2|Extensão','3|Flexão anormal','4|Flexão normal / retirada','5|Localiza estímulo','6|Obedece comandos','NT|Não testável']};
+const FOUR={ocular:['0|Sem abertura ao estímulo','1|Abre ao estímulo doloroso','2|Abre à voz forte','3|Olhos abertos, sem acompanhar','4|Acompanha ou pisca ao comando'],motora:['0|Sem resposta ou mioclonia generalizada','1|Extensão ao estímulo','2|Flexão ao estímulo','3|Localiza estímulo','4|Faz gesto ao comando'],tronco:['0|Reflexos pupilar, corneano e tosse ausentes','1|Pupilar e corneano ausentes','2|Pupilar ou corneano ausente','3|Uma pupila dilatada e fixa','4|Pupilar e corneano presentes'],respiracao:['0|Apneia ou frequência igual à do ventilador','1|Respira acima da frequência do ventilador','2|Sem intubação, ritmo irregular','3|Sem intubação, Cheyne–Stokes','4|Sem intubação, ritmo regular']};
+const PAINAD={resp:['0|Respiração normal','1|Dificuldade ocasional / hiperventilação breve','2|Dificuldade ruidosa, hiperventilação prolongada ou Cheyne–Stokes'],voz:['0|Sem vocalização negativa','1|Gemidos ocasionais / fala negativa baixa','2|Chamados repetidos, gemidos altos ou choro'],face:['0|Sorriso ou expressão neutra','1|Tristeza, medo ou testa franzida','2|Caretas'],corpo:['0|Relaxado','1|Tensão / inquietação','2|Rigidez, punhos cerrados, defesa ou agressividade'],consolo:['0|Não necessita consolo','1|Consolável por voz ou toque','2|Não consolável']};
+const CPOT={face:['0|Face relaxada','1|Face tensa','2|Careta'],corpo:['0|Sem movimento ou posição normal','1|Movimentos de proteção','2|Agitação'],musculo:['0|Sem resistência passiva','1|Resistência ao movimento','2|Resistência intensa / movimento impedido'],ventilador:['0|Tolera a ventilação','1|Tosse, mas tolera','2|Assincronia persistente'],voz:['0|Voz normal ou silêncio','1|Suspiros ou gemidos','2|Gritos ou choro']};
+const MADDOX=['0 — Sítio íntegro, sem sinais de flebite','1 — Dor ou rubor próximo da inserção','2 — Dois sinais entre dor, rubor e edema','3 — Dor, rubor e edema','4 — Sinais anteriores e cordão venoso','5 — Sinais anteriores e secreção purulenta'];
+const COMFORT_ITEMS={alerta:'Estado de alerta',calma:'Calma / agitação',movimento:'Movimentos corporais',tonus:'Tônus muscular',face:'Tensão facial',respiracao:'Resposta respiratória ao ventilador',choro:'Choro / vocalização'};
+const SOURCES=[
+ ['Glasgow — referência oficial','https://www.glasgowcomascale.org/downloads/GCS-Assessment-Aid-Brazilian.pdf'],
+ ['FOUR — domínios e pontuação','https://pmc.ncbi.nlm.nih.gov/articles/PMC7223804/'],
+ ['NIHSS — formulário e instruções oficiais','https://www.ninds.nih.gov/sites/default/files/documents/NIH-Stroke-Scale_updatedFeb2024_508.pdf'],
+ ['Escala de Faces FPS-R — instrumento oficial','https://www.iasp-pain.org/resources/faces-pain-scale-revised/'],
+ ['PAINAD — validação brasileira','https://www.scielo.br/j/eins/a/3VW8CfBCDq3TfLHgkPw8ZTJ/abstract/?lang=pt'],
+ ['CPOT — referência dos autores','https://www.health.belgium.be/sites/default/files/uploads/fields/fpshealth_theme_file/cpothandout.pdf'],
+ ['Maddox — referência para consulta (Tabela 1)','https://subpav.org/aps/uploads/publico/repositorio/_IDENTIFICA%C3%87%C3%83O_E_MANEJO_DA_FLEBITE.docx_%28v3%29_-_Teresa_Cristina_Brasil_Ferreira.pdf'],
+ ['Anvisa — prevenção de infecção de corrente sanguínea','https://www.gov.br/anvisa/pt-br/centraisdeconteudo/publicacoes/servicosdesaude/publicacoes/Protocolo1PrevenodeIPCS_1.pdf'],
+ ['Cofen 736/2024 — Processo de Enfermagem','https://www.cofen.gov.br/resolucao-cofen-no-736-de-17-de-janeiro-de-2024/'],
+ ['Cofen 754/2024 — registros eletrônicos','https://www.cofen.gov.br/resolucao-cofen-no-754-de-16-de-maio-de-2024/'],
+ ['Coren-SP — Processo de Enfermagem','https://portal.coren-sp.gov.br/wp-content/uploads/2025/04/processo_de_enfermagem.pdf'],
+ ['COMFORT-B — instrumento oficial e versões traduzidas','https://www.comfortassessment.nl/web/index.php/instruments/comfort/'],
+ ['COMFORT-B — descrição e validação pelos autores','https://onlinelibrary.wiley.com/doi/full/10.1002/ejp.569'],
+ ['Metas internacionais de segurança — orientação institucional','https://www.gov.br/ebserh-/pt-br/hospitais-universitarios/regiao-norte/hdt-uft/saude/METASINTERNACIONAISDESEGURANADOPACIENTE3.pdf']
+];
+const clone=x=>JSON.parse(JSON.stringify(x));
+const uid=()=>globalThis.crypto?.randomUUID?.()||Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const filled=x=>x!==''&&x!==null&&x!==undefined;
+const arr=x=>Array.isArray(x)?x:[];
+const value=(o,path)=>path.split('.').reduce((a,k)=>a?.[k],o);
+function put(o,path,val){const keys=path.split('.');if(keys.some(k=>['__proto__','prototype','constructor'].includes(k)))throw Error('Campo inválido');let target=o;keys.slice(0,-1).forEach((k,i)=>{if(target[k]===undefined)target[k]=/^\d+$/.test(keys[i+1])?[]:{};target=target[k];});target[keys.at(-1)]=val;}
+function localISO(d=new Date()){return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,16);}
+function dateBR(s){if(!s)return '';const m=String(s).match(/^(\d{4})-(\d{2})-(\d{2})/);return m?`${m[3]}/${m[2]}/${m[1]}`:String(s);}
+function stampBR(s){if(!s)return '';const d=new Date(s);return Number.isFinite(d.getTime())?d.toLocaleString('pt-BR'):s;}
+function blankVisit(){return {
+ schema:3,carryTaskKeys:[],assessments:{},sector:'',general:{},neuro:{scale:'Glasgow',gcs:{},four:{}},pain:{scale:'Numérica',painad:{},cpot:{},comfort:{}},
+ respiratory:{sounds:[],relevant:false},cardio:{},abdomen:{},mobility:{},skin:{colors:[],wounds:[],phlebitis:[],prevention:[]},
+ urinary:{},bowel:{},safety:{},nutrition:{routes:[]},devices:[],infusions:[],finish:{},findings:'',deviceNotes:'',events:'',results:'',plan:'',manualTask:''
+};}
+function newDevice(type){return {id:uid(),type,site:'',siteOther:'',fixationSite:'',side:'',caliber:'',date:'',dateUnknown:false,time:'',dressing:{},enteral:{},drain:{}};}
+function blankDB(){return {version:3,patients:[],tasks:[],settings:{avpHours:48,dressingDays:7}};}
+
+function sumScale(values,ranges){if(values.length!==ranges.length||values.some((x,i)=>!filled(x)||x==='NT'||!Number.isInteger(Number(x))||Number(x)<ranges[i][0]||Number(x)>ranges[i][1]))return null;return values.reduce((a,b)=>a+Number(b),0);}
+function neuroText(v){const n=v.neuro||{};
+ if(n.scale==='Glasgow'){const a=['ao','rv','rm'].map(k=>n.gcs?.[k]);if(!a.some(filled))return '';const total=sumScale(a,[[1,4],[1,5],[1,6]]);return `Glasgow ${total===null?'sem total calculável':total+'/15'} (AO – ${a[0]||'não avaliada'}, RV – ${a[1]||'não avaliada'}, RM – ${a[2]||'não avaliada'})${n.reason?'; limitação: '+n.reason:''}`;}
+ if(n.scale==='AVDI')return n.avdi?'AVDI: '+n.avdi:'';
+ if(n.scale==='FOUR'){const keys=['ocular','motora','tronco','respiracao'],a=keys.map(k=>n.four?.[k]);if(!a.some(filled))return '';const total=sumScale(a,keys.map(()=>[0,4]));return `FOUR ${total===null?'incompleto':total+'/16'} (${keys.map((k,i)=>k+': '+(filled(a[i])?a[i]:'não avaliado')).join(', ')})`;}
+ if(n.scale==='NIHSS'&&filled(n.nihss))return `NIHSS ${n.nihss}/42, resultado registrado a partir da avaliação com instrumento institucional${n.reason?' ('+n.reason+')':''}`;
+ return '';
+}
+function painText(v){const p=v.pain||{};if(p.unable)return 'dor: não foi possível avaliar'+(p.reason?' ('+p.reason+')':'');if(v.assessments?.pain==='Normal'&&p.status==='Sem dor referida')return 'Paciente refere ausência de dor';let score=null,max=10;
+ if(p.scale==='Numérica')score=sumScale([p.score],[[0,10]]);
+ if(p.scale==='Faces')score=[0,2,4,6,8,10].includes(Number(p.face))&&filled(p.face)?Number(p.face):null;
+ if(p.scale==='PAINAD')score=sumScale(['resp','voz','face','corpo','consolo'].map(k=>p.painad?.[k]),Array(5).fill([0,2]));
+ if(p.scale==='CPOT'){max=8;if(p.mode)score=sumScale(['face','corpo','musculo',p.mode==='Intubado'?'ventilador':'voz'].map(k=>p.cpot?.[k]),Array(4).fill([0,2]));}
+ if(p.scale==='COMFORT-B'){max=30;const respiratory=p.comfortMode==='Ventilação mecânica'?'respiracao':p.comfortMode==='Respiração espontânea'?'choro':'';if(respiratory)score=sumScale(['alerta','calma','movimento','tonus','face',respiratory].map(k=>p.comfort?.[k]),Array(6).fill([1,5]));}
+ const partial=(p.scale==='PAINAD'&&Object.values(p.painad||{}).some(filled))||(p.scale==='CPOT'&&Object.values(p.cpot||{}).some(filled))||(p.scale==='COMFORT-B'&&Object.values(p.comfort||{}).some(filled));
+ if(score===null&&!partial&&!p.location)return '';
+ if(score!==null&&['Numérica','Faces'].includes(p.scale))return score===0?`Paciente refere ausência de dor, escala ${p.scale.toLowerCase()} 0/${max}`:`Paciente refere dor${p.location?' em '+p.location:''}, intensidade ${score}/${max} pela escala ${p.scale.toLowerCase()}${p.notes?', '+p.notes:''}`;
+ if(p.scale==='COMFORT-B')return `COMFORT Behavior (COMFORT-B)${score===null?': avaliação incompleta':': '+score+'/30'}${p.comfortMode?', '+p.comfortMode.toLowerCase():''}${p.location?', localização: '+p.location:''}${p.notes?', '+p.notes:''}`;
+ return `avaliação da dor por ${p.scale}${score===null?' incompleta':': '+score+'/'+max}${p.location?', localização: '+p.location:''}${p.notes?', '+p.notes:''}`;
+}
+function deviceName(d){return d.type==='Outro'?(d.otherType||'Outro dispositivo'):d.type;}
+function siteName(d){return d.site==='Outro'?(d.siteOther||'outro local não especificado'):d.site;}
+function deviceLabel(d){return [deviceName(d),d.type==='Sonda vesical'?'':siteName(d),['Sonda vesical','Cistostomia'].includes(d.type)?'':d.side].filter(Boolean).join(' · ');}
+function ageHours(d,now=new Date()){if(d.dateUnknown||!d.date||!d.time)return null;const t=new Date(d.date+'T'+d.time);return Number.isFinite(t.getTime())?(now-t)/3600000:null;}
+function dayAge(s,now=new Date()){if(!s)return null;const m=s.match(/^(\d{4})-(\d{2})-(\d{2})$/);if(!m)return null;return (Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())-Date.UTC(+m[1],+m[2]-1,+m[3]))/86400000;}
+function automaticTasks(v,settings,now=new Date()){
+ const out=[];const add=(key,text,signature='')=>out.push({key,text,signature:String(signature)});
+ for(const [key,label] of [['idBand','identificação'],['fallBand','risco de queda'],['allergyBand','alergia']])if(['Ausente','Necessita troca'].includes(v.safety[key]))add('band:'+key,`Providenciar / trocar pulseira de ${label}`,v.safety[key]);
+ if(v.safety.hasAllergy&&!v.safety.allergy?.trim())add('allergy','Especificar alergia sinalizada');
+ for(const w of v.skin.wounds)if(w.needsChange)add('wound:'+w.id,`Trocar curativo da lesão — ${siteName(w)||'local não informado'}${w.side?' · '+w.side:''}`,JSON.stringify([w.site,w.siteOther,w.side,w.dressing]));
+ for(const f of v.skin.phlebitis){
+  for(const [key,name] of [['hirudoid','Hirudoid'],['camomila','camomila']])if(f[key]!=='Sim')add(`phlebitis:${f.id}:${key}`,`Conferir indicação/prescrição de ${name} e, se previsto, providenciar entrega — ${siteName(f)||'local não informado'} ${f.side||''}`.trim(),f[key]||'NI');
+ }
+ for(const d of v.devices){
+  const label=deviceLabel(d),dr=d.dressing||{};
+  if(VENOUS.includes(d.type)){
+   const problems=arr(dr.state).filter(x=>['Sujo','Com sangue','Descolando','Úmido'].includes(x));
+   if(problems.length)add('dressing:'+d.id,`Trocar curativo — ${label}: ${problems.join(', ')}`,JSON.stringify([dr.date,problems]));
+   else if(d.type!=='AVP'){
+    if(dr.unknown||!dr.date)add('dressing-date:'+d.id,`Conferir data do curativo — ${label}; prazo não calculável`);
+    else if(dayAge(dr.date,now)>=settings.dressingDays)add('dressing:'+d.id,`Trocar / avaliar curativo — ${label}: prazo configurado de ${settings.dressingDays} dias atingido`,dr.date+'|prazo');
+   }
+   if(d.type==='AVP'){
+    const days=d.dateUnknown?null:dayAge(d.date,now),reviewDays=Math.ceil(settings.avpHours/24);
+    if(days===null)add('avp-date:'+d.id,`Conferir data de inserção do AVP — ${label}; revisão por data indisponível`);
+    else if(days>=reviewDays)add('avp-age:'+d.id,`Revisar AVP — ${label}: inserido em ${dateBR(d.date)}; lembrete por data (${reviewDays} dia(s)), sem cálculo de hora${d.difficult?' · ACESSO DIFÍCIL':''}`,d.date+'|data');
+    if(d.phlogistic==='Presente')add('avp-sign:'+d.id,`Avaliar sinais flogísticos — ${label}`,d.phlogistic);
+    if(d.extravasation==='Presente')add('avp-extra:'+d.id,`Avaliar extravasamento — ${label}`,d.extravasation);
+   }
+  }
+  if(d.type==='Sonda enteral'){
+   if(d.enteral.position!=='Realizada'||d.enteral.result!=='Posicionamento confirmado')add('enteral-position:'+d.id,`Conferir posicionamento da sonda enteral conforme protocolo — ${label}`,(d.enteral.position||'NI')+'|'+(d.enteral.result||''));
+   if(['Inadequada','Necessita troca'].includes(d.enteral.fixation))add('enteral-fix:'+d.id,`Avaliar / trocar fixação da sonda enteral — ${label}`,d.enteral.fixation);
+  }
+ }
+ for(const i of v.infusions)if((i.name||i.rate)&&!v.devices.some(d=>d.id===i.deviceId&&VENOUS.includes(d.type)))add('infusion-link:'+i.id,`Vincular infusão ${i.name||'sem nome'} a um acesso venoso instalado`);
+ return out;
+}
+function syncTasks(db,p,v,now=new Date()){
+ if(!p||p.status!=='active'||p.deletedAt)return;
+ const wants=automaticTasks(v,db.settings,now),keys=new Set(wants.map(x=>x.key));
+ v.carryTaskKeys=arr(v.carryTaskKeys).filter(k=>!keys.has(k));
+ for(const w of wants){let t=db.tasks.find(t=>t.patientId===p.id&&t.autoKey===w.key);
+  if(!t){t={id:uid(),patientId:p.id,autoKey:w.key,done:false,createdAt:now.toISOString()};db.tasks.push(t);}
+  else if(t.resolved||t.signature!==w.signature){t.done=false;delete t.doneAt;}
+  Object.assign(t,{text:w.text,signature:w.signature,resolved:false});
+ }
+ for(const t of db.tasks.filter(t=>t.patientId===p.id&&t.autoKey))if(!keys.has(t.autoKey)&&!v.carryTaskKeys.includes(t.autoKey)){t.resolved=true;t.resolvedAt=now.toISOString();}
+}
+function openTasks(db,id){return db.tasks.filter(t=>t.patientId===id&&!t.done&&!t.resolved);}
+function manualPending(db,p,v){const key=v.id||'draft';if(!v.manualTask?.trim()){db.tasks=db.tasks.filter(t=>!(t.patientId===p.id&&t.draftKey===key&&!t.done));return;}let t=db.tasks.find(t=>t.patientId===p.id&&t.draftKey===key&&!t.done);if(!t){t={id:uid(),patientId:p.id,draftKey:key,done:false,createdAt:new Date().toISOString()};db.tasks.push(t);}t.text=v.manualTask.trim();}
+function validateVisit(v,now=new Date()){
+ const issues=[],today=localISO(now).slice(0,10);
+ if(v.skin.integrity==='Íntegra'&&v.skin.wounds.length)issues.push('Há lesões cadastradas e a pele está marcada como íntegra. Revise a integridade ou as lesões.');
+ if(filled(v.neuro.nihss)&&(!Number.isInteger(Number(v.neuro.nihss))||Number(v.neuro.nihss)<0||Number(v.neuro.nihss)>42))issues.push('NIHSS deve ser um número inteiro de 0 a 42.');
+ const nonnegative=[['Diurese',v.urinary.volume],['Dias de diarreia',v.bowel.days],['Episódios de diarreia',v.bowel.episodes]];
+ for(const d of v.devices){nonnegative.push(['Taxa enteral',d.enteral.rate],['Marca externa',d.enteral.mark],['Débito do dreno',d.drain.output]);}
+ for(const i of v.infusions)nonnegative.push(['Vazão da infusão',i.rate]);
+ for(const [label,n] of nonnegative)if(filled(n)&&(!Number.isFinite(Number(n))||Number(n)<0))issues.push(label+': informe número maior ou igual a zero.');
+ for(const d of v.devices){
+  const label=deviceLabel(d);
+  if(d.date&&!d.dateUnknown&&d.date>today)issues.push(`${label}: data de inserção futura.`);
+  if(d.dressing.date&&!d.dressing.unknown&&d.dressing.date>today)issues.push(`${label}: data do curativo futura.`);
+  if(d.site==='Outro'&&!d.siteOther?.trim())issues.push(`${label}: descreva o outro sítio/local.`);
+  if(d.type==='Sonda enteral'){
+   const e=d.enteral;
+   for(const [key,val] of [['local',siteName(d)],['lateralidade',d.side],['calibre',d.caliber],['fixação',e.fixation],['decúbito / cabeceira',e.head],['situação da infusão',e.feedState],['confirmação do posicionamento',e.position]])if(!filled(val))issues.push(`${label}: informe ${key} ou assinale sem informação / não avaliado.`);
+   if(!d.date&&!d.dateUnknown)issues.push(`${label}: informe data de inserção ou Sem informação.`);
+   if(e.feedState==='Infundindo'){
+    if(!e.formula?.trim())issues.push(`${label}: informe a dieta/solução infundida.`);
+    if(!filled(e.rate))issues.push(`${label}: informe a taxa de infusão.`);
+    if(arr(v.nutrition.routes).includes('Jejum'))issues.push(`${label}: jejum e infusão enteral ativa são contraditórios; revise a situação da infusão.`);
+   }
+   if(e.position==='Realizada'&&(!e.method?.trim()||!e.result?.trim()))issues.push(`${label}: registre método e resultado da confirmação de posicionamento.`);
+  }
+ }
+ if(arr(v.nutrition.routes).includes('Dieta enteral')&&!v.devices.some(d=>d.id===v.nutrition.deviceId&&d.type==='Sonda enteral'))issues.push('Vincule a dieta enteral a uma sonda instalada.');
+ if(URINARY_DEVICES.includes(v.urinary.method)&&!v.devices.some(d=>d.id===v.urinary.deviceId&&d.type===v.urinary.method))issues.push('Vincule a diurese ao dispositivo urinário instalado.');
+ if(v.bowel.lastDate&&!v.bowel.unknown&&v.bowel.lastDate>today)issues.push('Data da última evacuação futura.');
+ if((v.bowel.status||v.assessments?.bowel)&&!v.bowel.lastDate&&!v.bowel.unknown)issues.push('Informe a data da última evacuação ou marque Não sabe informar.');
+ if(v.finish.guidance==='Não'&&!v.finish.guidanceReason?.trim())issues.push('Informe o motivo de não realizar as orientações finais.');
+ if(v.finish.guidance==='Sim'&&!v.finish.recipient)issues.push('Informe quem recebeu as orientações.');
+ if(v.pain.scale==='COMFORT-B')for(const n of Object.values(v.pain.comfort||{}))if(filled(n)&&(!Number.isInteger(Number(n))||Number(n)<1||Number(n)>5))issues.push('COMFORT-B: cada item deve receber um valor inteiro de 1 a 5.');
+ for(const w of v.skin.wounds)if(w.dressingDate&&!w.dressingUnknown&&w.dressingDate>today)issues.push('Data futura no curativo da lesão.');
+ for(const i of v.infusions)if(i.date&&i.date>today)issues.push('Data futura na infusão '+(i.name||''));
+ return issues;
+}
+function normalizeUrinaryDevices(v){
+ for(const d of v.devices)if(d.type==='Sonda vesical'&&d.site==='Suprapúbica / cistostomia'){d.type='Cistostomia';d.site='Região suprapúbica';if(v.urinary.deviceId===d.id)v.urinary.method='Cistostomia';}
+ v.carryTaskKeys=arr(v.carryTaskKeys).filter(key=>!v.devices.some(d=>d.type==='AVP'&&d.date&&!d.dateUnknown&&key==='avp-date:'+d.id));
+ return v;
+}
+function migrateVisit(old){
+ if(old?.schema===3){const b=blankVisit();for(const k of Object.keys(b))if(old[k]!==undefined)b[k]=clone(old[k]);for(const key of ['assessments','general','neuro','pain','respiratory','cardio','abdomen','mobility','skin','urinary','bowel','safety','nutrition','finish'])b[key]={...blankVisit()[key],...(b[key]&&typeof b[key]==='object'&&!Array.isArray(b[key])?b[key]:{})};for(const [parent,key] of [['skin','colors'],['skin','wounds'],['skin','phlebitis'],['skin','prevention'],['nutrition','routes'],['respiratory','sounds']])b[parent][key]=arr(b[parent][key]);b.infusions=arr(b.infusions);b.devices=arr(b.devices).map(d=>({...newDevice(d.type),...d,dressing:d.dressing||{},enteral:d.enteral||{},drain:d.drain||{}}));return normalizeUrinaryDevices({...b,id:old.id||uid(),savedAt:old.savedAt||null,taskSnapshot:old.taskSnapshot||[],identity:old.identity||null,legacyNotes:old.legacyNotes||''});}
+ const v=blankVisit();v.id=uid();if(!old)return v;v.sector=old.sector||'';v.savedAt=old.datetime?new Date(old.datetime).toISOString():null;
+ v.general={conscious:old.conscious||'',orientation:old.orientation||'',companion:old.companion==='Sim'?'Acompanhado':old.companion==='Não'?'Sem acompanhante':'',compName:old.compName||'',compRelation:old.compRelation||'',sleep:old.sleep||'',mattress:old.mattress||''};
+ v.respiratory={...v.respiratory,oxygen:old.oxygen==='Câmara de falamine'?'':old.oxygen||'',flow:old.o2flow||'',spo2:old.spo2||''};
+ v.urinary.status=old.urine||'';v.bowel={status:old.stool||'',lastDate:old.lastStool||''};v.mobility.mode=old.mobility||'';
+ for(const k of ['idBand','fallBand','allergyBand','allergy'])v.safety[k]=old[k]||'';v.safety.hasAllergy=!!old.allergy;
+ if(old.oral&&old.oral!=='Via oral não utilizada'){v.nutrition.routes.push('Dieta oral');v.nutrition.acceptance=old.oral;}
+ const names={'Cateter venoso central':'CVC','Sonda vesical de demora':'Sonda vesical','Sonda nasoenteral':'Sonda enteral','Shiley':'Shilley'};
+ v.devices=arr(old.devices).map(x=>{const d=newDevice(names[x.name]||x.name||'Outro');Object.assign(d,{date:x.date||'',site:SITES[d.type]?.includes(x.site)?x.site:x.site?'Outro':'',siteOther:SITES[d.type]?.includes(x.site)?'':x.site||'',side:x.side||''});return d;});
+ if(old.enteral==='Sim'){
+  v.nutrition.routes.push('Dieta enteral');let d=v.devices.find(d=>d.type==='Sonda enteral');if(!d){d=newDevice('Sonda enteral');v.devices.push(d);}v.nutrition.deviceId=d.id;
+  d.date=d.date||old.sneDate||'';d.enteral={formula:old.dietName||'',dietType:old.dietType||'',rate:old.dietRate||'',mark:old.sneCm||'',fixation:old.sneFix||'',head:old.headUp||'',position:old.snePosition==='Confirmada conforme protocolo'?'Registro anterior — reconferir':old.snePosition||''};
+ }
+ const f=v.devices.find(d=>d.type==='Sonda vesical');if(f){v.urinary.deviceId=f.id;v.urinary.method='Sonda vesical';}
+ v.infusions=arr(old.infusions).map(i=>({id:uid(),name:i.name||'',rate:i.rate||'',date:i.when?.slice(0,10)||'',time:i.when?.slice(11,16)||'',deviceId:''}));
+ for(const k of ['findings','deviceNotes','events','results','plan'])v[k]=old[k]||'';
+ v.legacyNotes=[old.resp&&'Respiratório: '+old.resp,old.cardio&&'Cardiovascular: '+old.cardio,old.abdomen&&'Abdome: '+old.abdomen,old.skin&&'Pele: '+old.skin,old.oxygen==='Câmara de falamine'?'Suporte registrado na versão anterior: Câmara de falamine (opção removida; revisar).':''].filter(Boolean).join('; ');
+ return normalizeUrinaryDevices(v);
+}
+function normalizeDB(raw){
+ if(!raw||!Array.isArray(raw.patients)||!Array.isArray(raw.tasks))throw Error('Backup inválido: pacientes e pendências ausentes.');
+ const db=blankDB();db.settings={...db.settings,...raw.settings};
+ if(!Number.isFinite(+db.settings.avpHours)||+db.settings.avpHours<=0||!Number.isFinite(+db.settings.dressingDays)||+db.settings.dressingDays<=0)throw Error('Prazos inválidos.');
+ const ids=new Set();db.patients=raw.patients.map(p=>{if(typeof p.id!=='string'||!/^[-a-zA-Z0-9_]{1,100}$/.test(p.id)||!p.bed||ids.has(p.id))throw Error('Cadastro incompleto ou identificador duplicado.');ids.add(p.id);return {...p,code:String(p.code||''),record:String(p.record||''),diagnosis:typeof p.diagnosis==='string'?p.diagnosis:typeof p.admission?.diagnosis==='string'?p.admission.diagnosis:'',history:arr(p.history),visit:p.visit?migrateVisit(p.visit):null,draft:p.draft?migrateVisit(p.draft):null};});
+ db.tasks=raw.tasks.filter(t=>ids.has(t.patientId)&&typeof t.text==='string').map(t=>({...t,id:t.id||uid()}));for(const p of db.patients)if(p.status==='active'&&!p.deletedAt)syncTasks(db,p,p.draft||p.visit||blankVisit());return db;
+}
+function freshRound(previous){const v=blankVisit();v.id=uid();if(!previous)return v;v.sector=previous.sector;if(typeof previous.finish?.palliative==='boolean')v.finish.palliative=previous.finish.palliative;v.devices=previous.devices.map(old=>{const d=newDevice(old.type);for(const k of ['id','type','otherType','site','siteOther','side','caliber','date','time','dateUnknown','lumens','difficult','fixationSite'])d[k]=old[k];d.dressing={date:old.dressing.date,unknown:old.dressing.unknown};d.drain={type:old.drain.type};return d;});return v;}
+
+const ASSESSMENT_HELP={
+ general:'Consciente e orientado, hidratado, pupilas isofotorreagentes. Não preenche pontuações de escalas.',
+ pain:'O paciente refere ausência de dor. Para observação comportamental, use a escala correspondente em Alterado.',
+ respiratory:'Murmúrios presentes bilateralmente, sem ruídos adventícios e sem sinais de desconforto. O suporte de oxigênio registrado é mantido.',
+ cardio:'Hemodinâmica estável, sem edema, pulsos rítmicos e cheios, TEC ≤ 3 s, sem turgência ou sopro, bulhas rítmicas e normofonéticas. Implantes são mantidos.',
+ abdomen:'Abdome flácido, indolor, ruídos hidroaéreos presentes.',
+ mobility:'Deambula sem auxílio.',
+ skin:'Pele corada e íntegra, sem lesões ou flebite nesta avaliação. Proteções preventivas são mantidas.',
+ urinary:'Diurese presente, sem alterações observadas. Mantém via, volume e período registrados.',
+ bowel:'Evacuação presente, sem diarreia. Informe a data da última evacuação ou marque Não sabe informar.',
+ nutrition:'Boa aceitação da dieta oral, quando utilizada. Não confirma posição ou condições de sondas.',
+ safety:'Pulseira de risco de queda adequada, rodas travadas, cama baixa e cabeceira elevada. Alergias são informadas separadamente.'
+};
+function applyAssessment(v,key,status){
+ if(!Object.hasOwn(ASSESSMENT_HELP,key))return;
+ v.assessments ||= {};v.assessments[key]=status;
+ if(status!=='Normal')return;
+ if(key==='general'){
+  Object.assign(v.general,{conscious:'Consciente',orientation:'Orientado',hydration:'Hidratado',pupils:'Isocóricas',reactRight:'Presente',reactLeft:'Presente',pupilRight:'',pupilLeft:''});
+  Object.assign(v.neuro,{gcs:{},four:{},avdi:'',nihss:'',reason:''});
+ }
+ if(key==='pain')Object.assign(v.pain,{status:'Sem dor referida',score:'',face:'',painad:{},cpot:{},comfort:{},unable:false,reason:'',location:'',notes:''});
+ if(key==='respiratory')Object.assign(v.respiratory,{pattern:v.respiratory.oxygen==='Ventilação mecânica'?'':'Eupneico',effort:'Sem sinais de desconforto respiratório',mv:'Presentes',mvSites:[],adventitious:'Ausentes',sounds:[]});
+ if(key==='cardio')Object.assign(v.cardio,{hemodynamic:'Hemodinamicamente estável',edema:'Ausente',edemaGrade:'',edemaSite:'',pulseRhythm:'Rítmico',pulseVolume:'Cheio',tec:'≤ 3 segundos',jugular:'Ausente',soundsRhythm:'Rítmicas',soundsAudibility:'Normofonéticas',murmur:'Ausente',murmurSites:[]});
+ if(key==='abdomen')Object.assign(v.abdomen,{inspection:'Flácido',rh:'Presentes',tender:'Indolor',sites:[]});
+ if(key==='mobility')Object.assign(v.mobility,{mode:'Deambula sem auxílio',aids:[],other:''});
+ if(key==='skin'){
+  Object.assign(v.skin,{colors:['Corado'],pallor:'',integrity:'Íntegra',wounds:[],phlebitis:[]});
+  v.carryTaskKeys=arr(v.carryTaskKeys).filter(k=>!k.startsWith('wound:')&&!k.startsWith('phlebitis:'));
+ }
+ if(key==='urinary'){
+  Object.assign(v.urinary,{status:'Presente',color:'Amarelo claro',colorOther:'',clumps:'Ausentes',blood:'Ausente'});
+  v.urinary.quantified ||= 'Não';
+  if(!v.urinary.method){const d=v.devices.find(d=>URINARY_DEVICES.includes(d.type));if(d){v.urinary.method=d.type;v.urinary.deviceId=d.id;}else v.urinary.method='Espontânea';}
+ }
+ if(key==='bowel')Object.assign(v.bowel,{status:'Presente',diarrhea:false,days:'',episodes:'',bristol:''});
+ if(key==='nutrition'){
+  if(!arr(v.nutrition.routes).length)v.nutrition.routes=['Dieta oral'];
+  if(arr(v.nutrition.routes).includes('Dieta oral'))v.nutrition.acceptance='Boa aceitação';
+ }
+ if(key==='safety'){
+  Object.assign(v.safety,{fallBand:'Presente e adequada',wheels:true,lowBed:true,headUp:true});
+  v.carryTaskKeys=arr(v.carryTaskKeys).filter(k=>k!=='band:fallBand');
+ }
+}
+function assessmentForPath(path){
+ if(path.startsWith('neuro.')||/^general\.(conscious|orientation|hydration|pupils|pupilRight|pupilLeft|reactRight|reactLeft)$/.test(path))return 'general';
+ const key=path.split('.')[0];
+ if(key==='respiratory'&&['oxygen','flow','spo2','rate'].includes(path.split('.')[1]))return '';
+ if(key==='cardio'&&path.startsWith('cardio.implant'))return '';
+ if(key==='skin'&&path.startsWith('skin.prevention'))return '';
+ if(key==='urinary'&&['method','quantified','volume','period','deviceId'].includes(path.split('.')[1]))return '';
+ if(key==='safety'&&!['fallBand','wheels','lowBed','headUp'].includes(path.split('.')[1]))return '';
+ return Object.hasOwn(ASSESSMENT_HELP,key)?key:'';
+}
+function assessmentHasData(v,key){
+ if(key==='general')return ['conscious','orientation','hydration','pupils','reactRight','reactLeft'].some(k=>filled(v.general[k]))||!!neuroText(v);
+ if(key==='pain')return !!painText(v)||Object.values(v.pain.comfort||{}).some(filled);
+ if(key==='safety')return ['fallBand','wheels','lowBed','headUp'].some(k=>!!v.safety[k]);
+ const data={...(v[key]||{})};
+ for(const k of ['relevant','scale','routes','prevention','oxygen','flow','spo2','rate'])delete data[k];
+ return Object.values(data).some(x=>Array.isArray(x)?x.length:typeof x==='object'&&x?Object.values(x).some(filled):filled(x)&&x!==false);
+}
+function normalSummary(v,key){
+ if(key==='respiratory')return 'Murmúrios vesiculares presentes bilateralmente, sem ruídos adventícios.'+(v.respiratory.oxygen?' Suporte: '+v.respiratory.oxygen+'.':' Suporte de oxigênio não informado.');
+ if(key==='skin')return 'Pele corada e íntegra, sem lesões ou flebite nesta avaliação.';
+ if(key==='pain')return 'Paciente refere ausência de dor; nenhuma pontuação foi presumida.';
+ return ASSESSMENT_HELP[key];
+}
+function defaultEducationRecipient(v){
+ const g=v.general;
+ if(g.companion==='Acompanhado')return g.conscious==='Consciente'?'Paciente e acompanhante':'Acompanhante';
+ return g.conscious==='Inconsciente'?'':'Paciente';
+}
+function applyQuickChange(v,path,next){
+ if(path.startsWith('assessments.')){applyAssessment(v,path.split('.')[1],next);return;}
+ const group=assessmentForPath(path);
+ if(group&&v.assessments?.[group]==='Normal')v.assessments[group]='Alterado';
+ if(path==='pain.scale'){
+  v.pain.status='';v.pain.unable=false;
+  v.assessments.pain='Alterado';
+ }
+ if(path==='safety.meta1Status'){
+  v.safety.meta1=next==='Meta 1 OK';
+  if(v.safety.meta1){v.safety.idBand='Presente e adequada';v.safety.meta1Reason='';v.carryTaskKeys=arr(v.carryTaskKeys).filter(k=>k!=='band:idBand');}
+ }
+ if(path==='safety.idBand'&&next!=='Presente e adequada'){
+  v.safety.meta1=false;if(v.safety.meta1Status)v.safety.meta1Status='Não conformidade';
+ }
+ if(path==='safety.allergyStatus'){
+  v.safety.hasAllergy=next==='Alergia conhecida';
+  if(!v.safety.hasAllergy){v.safety.allergy='';v.safety.allergyBand='';v.carryTaskKeys=arr(v.carryTaskKeys).filter(k=>k!=='allergy'&&k!=='band:allergyBand');}
+ }
+ if(path==='general.companion'&&next!=='Acompanhado'){v.general.compName='';v.general.compRelation='';}
+ if(path==='finish.guidance'){
+  const yes=next==='Sim';
+  for(const key of ['fall','pressure','bell','belongings','call','handHygiene','infection','deviceCare'])v.finish[key]=yes;
+  v.safety.meta5=yes;
+  if(yes){v.finish.guidanceReason='';v.finish.recipient=defaultEducationRecipient(v);}
+  else v.finish.recipient='';
+ }
+ if(path==='finish.recipient')v.finish.recipientAuto=false;
+ if(['finish.fall','finish.pressure','finish.bell','finish.belongings','finish.call','finish.handHygiene','finish.infection','finish.deviceCare'].includes(path)&&!next&&v.finish.guidance==='Sim'){v.finish.guidance='';v.safety.meta5=false;}
+ if(path==='finish.guidance'&&next==='Sim')v.finish.recipientAuto=true;
+ if((path==='general.companion'||path==='general.conscious')&&v.finish.guidance==='Sim'&&v.finish.recipientAuto)v.finish.recipient=defaultEducationRecipient(v);
+ if(path==='nutrition.fastingKind'||path==='nutrition.awaiting'){
+  const n=v.nutrition;
+  n.reason=n.fastingKind==='Clínico'?'Jejum clínico':n.fastingKind?(n.fastingKind==='Ag. procedimento'?'Aguardando procedimento':'Aguardando exame')+(n.awaiting?': '+n.awaiting:''):'';
+ }
+}
+
+function reportSentence(text){return text&&String(text).trim()?String(text).replace(/\s+/g,' ').trim().replace(/[.;]+$/,'')+'.':'';}
+function reportJoin(values){return values.filter(x=>filled(x)&&x!==false&&x!=='Não se aplica').join(', ');}
+function reportDeviceName(d){return d.type==='PICC'?'cateter PICC':d.type==='Sonda vesical'?'sonda vesical de demora':d.type==='Sonda enteral'&&siteName(d)==='Narina'?'sonda nasoenteral':deviceName(d);}
+function deviceReport(d){
+ const dr=d.dressing||{};let local=['Sonda vesical'].includes(d.type)?'':reportJoin([siteName(d),d.type==='Cistostomia'?'':d.side]);
+ if(d.type==='PICC'&&['Basílica','Cefálica','Braquial','Axilar'].includes(siteName(d))&&['Direita','Esquerda'].includes(d.side))local=(d.side==='Direita'?'MSD':'MSE')+' (veia '+siteName(d).toLowerCase()+')';
+ const feminine=d.type.startsWith('Sonda')||['Cistostomia','Nefrostomia'].includes(d.type);
+ const info=[reportDeviceName(d)+(d.lumens?' '+d.lumens.toLowerCase():'')+(local?' em '+local:''),d.caliber?'calibre '+d.caliber:'',d.dateUnknown?'data de inserção não informada':d.date?(feminine?'instalada em ':'instalado em ')+dateBR(d.date):''];
+ if(d.type==='Sonda vesical'&&d.fixationSite)info.push(d.fixationSite==='Sem informação'?'local da fixação não informado':'fixada em '+d.fixationSite.toLowerCase());
+ if(VENOUS.includes(d.type)){if(arr(dr.state).length)info.push('com curativo '+dr.state.join(', ').toLowerCase());if(dr.unknown)info.push('data do curativo não informada');else if(dr.date)info.push('datado de '+dateBR(dr.date));if(d.difficult)info.push('acesso difícil');}
+ if(d.type==='AVP')info.push(d.phlogistic?'sinais flogísticos '+d.phlogistic.toLowerCase():'',d.extravasation?'extravasamento '+d.extravasation.toLowerCase():'',d.notes||'');
+ if(d.type==='Dreno'){
+  const r=d.drain||{};info.push(r.type?'tipo '+(r.type==='Outro'?r.otherType||'outro não especificado':r.type):'',r.noOutput?'sem débito':filled(r.output)?'débito de '+r.output+' mL'+(r.period?' em '+r.period:' (período não informado)'):'',r.aspect?'aspecto '+(r.aspect==='Outro'?r.aspectOther||'não informado':r.aspect):'',r.color?'coloração '+(r.color==='Outra'?r.colorOther||'não informada':r.color):'',r.type==='Tórax'&&r.oscillation?'oscilação '+r.oscillation:'');
+ }
+ return 'Mantendo '+reportJoin(info);
+}
+function enteralReport(d){
+ const e=d.enteral||{},parts=[];
+ parts.push(reportSentence('Mantendo '+reportJoin([reportDeviceName(d),siteName(d)?'em '+siteName(d).toLowerCase()+(d.side?' '+d.side.toLowerCase():''):'',d.caliber?'calibre '+d.caliber:'',d.dateUnknown?'data de inserção não informada':d.date?'instalada em '+dateBR(d.date):'',e.fixation?'fixação '+e.fixation.toLowerCase():'',filled(e.mark)?'marca externa de '+e.mark+' cm':'',e.head?'cabeceira em '+e.head:''])));
+ if(e.feedState==='Infundindo')parts.push(reportSentence('Recebendo '+(e.formula||'dieta/solução não informada')+(e.dietType?', dieta '+e.dietType.toLowerCase():'')+(filled(e.rate)?' a '+e.rate+' mL/h':'')));
+ else if(e.feedState)parts.push(reportSentence('Infusão pela sonda: '+e.feedState));
+ if(e.position==='Realizada')parts.push(reportSentence((e.result==='Posicionamento confirmado'?'Realizada confirmação do posicionamento':'Realizada verificação do posicionamento')+' conforme protocolo institucional'+(e.method?'; método: '+e.method:'; método não informado')+(e.result?'; resultado: '+e.result:'')));
+ else if(e.position)parts.push(reportSentence('Verificação do posicionamento: '+e.position));
+ return parts.filter(Boolean).join(' ');
+}
+function allergyReport(s){
+ if(s.hasAllergy||s.allergyStatus==='Alergia conhecida')return s.allergy?.trim()?'Alergia informada: '+s.allergy:'Alergia sinalizada, agente não especificado';
+ const denial={'Negadas pelo paciente':'Paciente nega alergias conhecidas','Negadas pelo acompanhante':'Acompanhante nega alergias conhecidas','Negadas por ambos':'Paciente e acompanhante negam alergias conhecidas'};
+ return denial[s.allergyStatus]||(s.allergyStatus==='Não foi possível obter informação'?'Não foi possível obter informação sobre alergias':'História alergológica não informada');
+}
+function recipientReport(v){
+ const g=v.general,f=v.finish,name=g.compName?g.compName:'acompanhante',relation=g.compRelation?' ('+g.compRelation+')':'';
+ if(f.recipient==='Paciente')return 'paciente';
+ if(f.recipient==='Acompanhante')return 'acompanhante '+(g.compName?name:'não identificado')+relation;
+ if(f.recipient==='Paciente e acompanhante')return 'paciente e acompanhante '+(g.compName?name:'não identificado')+relation;
+ return 'destinatário não informado';
+}
+function buildReport(p,v=p?.visit){
+ if(!v)return {text:'Ainda não há visita salva para este paciente.',segments:[],blocks:[]};
+ const g=v.general||{},s=v.safety||{},r=v.respiratory||{},c=v.cardio||{},a=v.abdomen||{},m=v.mobility||{},u=v.urinary||{},b=v.bowel||{},n=v.nutrition||{},f=v.finish||{},skin=v.skin||{};
+ const blocks=[];const block=(title,lines,optional=false)=>{const clean=lines.filter(Boolean).map(reportSentence);if(optional&&!clean.length)return;blocks.push({title,lines:clean.length?clean:['Não registrado nesta avaliação.']});};
+ const saved=v.savedAt?stampBR(v.savedAt):'Visita ainda não salva';
+ block('IDENTIFICAÇÃO DO PACIENTE',[`Paciente: ${p?.code||v.identity?.code||'identificação não informada'}. Registro: ${p?.record||v.identity?.record||'não informado'}. Leito: ${p?.bed||v.identity?.bed||'não informado'}. Setor: ${p?.sector||v.sector||'não informado'}. Visita registrada em: ${saved}`]);
+ block('DIAGNÓSTICO',[p?.diagnosis||v.identity?.diagnosis||'Diagnóstico não informado']);
+ block('ACOMPANHADO/DESACOMPANHADO',[g.companion==='Acompanhado'?'Acompanhado'+(g.compName?' por '+g.compName:' — identificação não informada')+(g.compRelation?' ('+g.compRelation+')':''):g.companion==='Sem acompanhante'?'Desacompanhado':'Acompanhante não informado']);
+ const physical=[];
+ physical.push(reportJoin([g.conscious,g.orientation?.toLowerCase(),neuroText(v)]));
+ if(g.pupils==='Isocóricas'&&g.reactRight==='Presente'&&g.reactLeft==='Presente'&&!filled(g.pupilRight)&&!filled(g.pupilLeft))physical.push('Pupilas isofotorreagentes');
+ else physical.push(reportJoin([g.pupils?'Pupilas '+g.pupils.toLowerCase():'',filled(g.pupilRight)?'diâmetro direito '+g.pupilRight+' mm':'',filled(g.pupilLeft)?'diâmetro esquerdo '+g.pupilLeft+' mm':'',g.reactRight?'fotorreação direita '+g.reactRight:'',g.reactLeft?'fotorreação esquerda '+g.reactLeft:'']));
+ physical.push(reportJoin([arr(skin.colors).map(x=>x==='Hipocorado'&&skin.pallor?x+' '+skin.pallor:x).join(', '),g.hydration]));
+ physical.push(reportJoin([r.pattern||r.effort,r.oxygen?'em '+r.oxygen:'',r.oxygen&&r.oxygen!=='Ar ambiente'&&filled(r.flow)?'O₂ a '+r.flow+' L/min':'',filled(r.spo2)?'SpO₂ '+r.spo2+'%':'',filled(r.rate)?'FR '+r.rate+' irpm':'']));
+ if(r.mv)physical.push('Murmúrios vesiculares '+r.mv.toLowerCase()+(r.mv!=='Presentes'&&arr(r.mvSites).length?' em '+r.mvSites.join(', '):r.mv==='Presentes'?' bilateralmente':''));
+ if(r.adventitious==='Ausentes')physical.push('Sem ruídos adventícios');
+ if(r.adventitious==='Presentes')for(const sound of arr(r.sounds))physical.push((sound.type||'Ruído adventício')+(arr(sound.sites).length?' em '+sound.sites.join(', '):' — localização não informada'));
+ physical.push(reportJoin([c.hemodynamic,c.pa?'PA '+c.pa+' mmHg':'',filled(c.hr)?'FC '+c.hr+' bpm':'',filled(g.temperature)?'temperatura '+g.temperature+' °C':'']));
+ physical.push(reportJoin([c.soundsRhythm||c.soundsAudibility?'Bulhas '+reportJoin([c.soundsRhythm?.toLowerCase(),c.soundsAudibility?.toLowerCase()]):'',c.murmur==='Ausente'?'sem sopro à ausculta':c.murmur==='Presente'?'sopro em foco(s) '+(arr(c.murmurSites).join(', ')||'não informado(s)'):'',c.valveClick?'clique de válvula metálica '+c.valveClick:'']));
+ physical.push(reportJoin([c.pulseRhythm||c.pulseVolume?'Pulsos periféricos '+reportJoin([c.pulseRhythm?.toLowerCase(),c.pulseVolume?.toLowerCase(),c.pulseSite]):'',c.tec?'TEC '+c.tec:'',c.jugular?'turgência jugular '+c.jugular.toLowerCase():'']));
+ if(c.edema==='Presente')physical.push('Edema '+reportJoin([c.edemaGrade,c.edemaSite]));else if(c.edema==='Ausente')physical.push('Sem edema à avaliação');
+ if(c.implant&&c.implant!=='Não identificado')physical.push(reportJoin(['Presença de '+c.implant,c.implantSite==='Outro'?c.implantOther:c.implantSite,c.implantSide]));
+ physical.push(reportJoin([a.inspection?'Abdome '+a.inspection.toLowerCase():'',a.rh?'ruídos hidroaéreos '+a.rh.toLowerCase():'',a.tender==='Doloroso'?'doloroso em '+(arr(a.sites).join(', ')||'local não informado'):a.tender?.toLowerCase()]));
+ physical.push(reportJoin([m.mode,m.mode==='Deambula com auxílio'&&arr(m.aids).length?'com auxílio de '+m.aids.join(', '):'',arr(m.aids).includes('Outro')?m.other:'']));
+ physical.push(v.findings,v.legacyNotes);block('EXAME FÍSICO',physical);
+ block('DISPOSITIVOS',[...arr(v.devices).map(deviceReport),v.deviceNotes,...(!v.devices.length&&v.deviceStatus==='Sem dispositivos'?['Sem dispositivos instalados']:[])]);
+ const infusions=arr(v.infusions).filter(i=>i.name?.trim()||filled(i.rate)).map(i=>{const d=v.devices.find(d=>d.id===i.deviceId&&VENOUS.includes(d.type));return reportJoin(['Recebendo '+(i.name||'infusão não identificada'),filled(i.rate)?'a '+i.rate+' mL/h':'vazão não informada',d?'pelo acesso '+deviceLabel(d):'acesso não vinculado',i.date?'instalada em '+dateBR(i.date)+(i.time?' às '+i.time:''):'']);});
+ block('INFUSÕES',infusions,true);
+ const enteral=arr(v.devices).filter(d=>d.type==='Sonda enteral');
+ block('NUTRIÇÃO ENTERAL',enteral.map(enteralReport),true);
+ const elimination=[];
+ if(u.status){let route=u.method==='Papagaio'||u.method==='Espontânea'?'espontânea':URINARY_DEVICES.includes(u.method)?'por '+(u.method==='Sonda vesical'?'sonda vesical de demora':u.method.toLowerCase()):u.method==='Sem informação'?'via não informada':'';elimination.push(reportJoin(['Diurese '+u.status.toLowerCase(),route,u.quantified==='Não'?'não quantificada':'',u.quantified==='Sim'&&filled(u.volume)?u.volume+' mL'+(u.period?' em '+u.period:' (período não informado)'):'',u.color?'urina de coloração '+(u.color==='Outra'?u.colorOther||'não informada':u.color).toLowerCase():'',u.clumps?'grumos '+u.clumps:'',u.blood?'sangramento visível '+u.blood:'' ]));}
+ if(b.status||b.lastDate||b.unknown)elimination.push(reportJoin([b.status?'Evacuação '+b.status.toLowerCase():'',b.unknown?'data da última evacuação desconhecida / não sabe informar':b.lastDate?'última evacuação em '+dateBR(b.lastDate):'data da última evacuação não informada',b.status==='Presente'&&b.bristol?'Bristol tipo '+b.bristol.split(' — ')[0]:'',b.diarrhea?'diarreia'+(filled(b.days)?' há '+b.days+' dia(s)':'')+(filled(b.episodes)?', '+b.episodes+' episódio(s) nas últimas 24 horas':''):'',b.clostridium?'isolamento por Clostridioides difficile registrado':'' ]));
+ block('ELIMINAÇÕES',elimination);
+ const lesions=[];if(skin.integrity)lesions.push('Pele '+skin.integrity.toLowerCase());
+ for(const w of arr(skin.wounds))lesions.push(reportJoin([w.type==='Lesão por pressão'?'Lesão por pressão '+(w.stage||'sem classificação informada'):w.type||'Lesão',siteName(w)?'em '+siteName(w):'',w.side,w.description,w.dressing?'curativo atual: '+w.dressing:'',w.dressingUnknown?'data do curativo não informada':w.dressingDate?'datado de '+dateBR(w.dressingDate):'']));
+ for(const ph of arr(skin.phlebitis))lesions.push(reportJoin(['Flebite',filled(ph.grade)?'grau '+String(ph.grade).split(' — ')[0]+' (Maddox)':'',siteName(ph),ph.side,ph.hirudoid?'uso de Hirudoid: '+ph.hirudoid:'',ph.camomila?'uso de camomila: '+ph.camomila:'']));
+ for(const pr of arr(skin.prevention))if(pr.status)lesions.push(reportJoin([pr.site+': '+pr.status.toLowerCase(),pr.status==='Com proteção'?(pr.unknown?'data de aplicação não informada':pr.date?'aplicada em '+dateBR(pr.date):''):'' ]));
+ block('LESÕES E CURATIVOS',lesions);
+ const evolution=[];const goals=[s.meta1?'Meta 1':'',s.meta5?'Meta 5':''].filter(Boolean);
+ if(goals.length)evolution.push('Realizadas as verificações referentes '+(goals.length===2?'às Metas 1 e 5':'à '+goals[0]));
+ if(s.meta1Status==='Não conformidade')evolution.push('Meta 1 com não conformidade'+(s.meta1Reason?': '+s.meta1Reason:''));
+ const overview=reportJoin([g.conscious?.toLowerCase(),g.orientation?.toLowerCase(),arr(skin.colors).map(x=>x==='Hipocorado'&&skin.pallor?x.toLowerCase()+' '+skin.pallor:x.toLowerCase()).join(', '),g.hydration?.toLowerCase(),r.pattern?.toLowerCase()||r.effort?.toLowerCase(),r.oxygen?'em '+r.oxygen.toLowerCase():'',c.hemodynamic?.toLowerCase()]);if(overview)evolution.push('Encontro paciente '+overview);
+ const bands=[];if(s.idBand==='Presente e adequada')bands.push('identificação');if(s.fallBand==='Presente e adequada')bands.push('risco de queda');if((s.hasAllergy||s.allergyStatus==='Alergia conhecida')&&s.allergyBand==='Presente e adequada')bands.push('alergia');
+ if(bands.length){const list=bands.length>1?bands.slice(0,-1).map(x=>'de '+x).join(', ')+' e de '+bands.at(-1):'de '+bands[0];evolution.push('Mantendo '+(bands.length>1?'pulseiras ':'pulseira ')+list+(bands.length>1?' presentes e adequadas':' presente e adequada'));}
+ for(const [key,label]of [['idBand','identificação'],['fallBand','risco de queda'],['allergyBand','alergia']])if(['Ausente','Necessita troca'].includes(s[key]))evolution.push('Pulseira de '+label+': '+s[key].toLowerCase());
+ evolution.push(allergyReport(s));
+ const security=reportJoin([s.wheels?'rodas travadas':'',s.lowBed?'cama baixa':'',s.headUp?'cabeceira elevada':'']);if(security)evolution.push('Leito com '+security);
+ if(g.mattress)evolution.push('Segue em colchão '+(g.mattress==='Outro'?g.mattressOther||'de tipo não informado':g.mattress.toLowerCase()));
+ const sleep={'Conseguiu dormir':'ter conseguido dormir','Não conseguiu dormir':'não ter conseguido dormir','Sono interrompido':'sono interrompido'};const reports=[sleep[g.sleep]||g.sleep,arr(n.routes).includes('Dieta oral')&&n.acceptance?n.acceptance.toLowerCase()+' da dieta oral':''].filter(Boolean);if(reports.length)evolution.push('Paciente refere '+reports.join(' e '));
+ if(arr(n.routes).includes('Jejum'))evolution.push('Em jejum'+(n.reason?', motivo: '+n.reason:', motivo não informado'));
+ const pain=painText(v);if(pain)evolution.push(pain);
+ if(f.palliative)evolution.push('Paciente em cuidados paliativos');
+ if(f.guidance==='Não')evolution.push('Orientações finais não realizadas'+(f.guidanceReason?': '+f.guidanceReason:': motivo não informado'));
+ else {
+  const education=[f.handHygiene?'higienização das mãos':'',f.infection?'prevenção de infecções':'',f.deviceCare?'cuidados para evitar manipulação de sondas, cateteres e curativos':'',f.fall?'prevenção de quedas e solicitação de auxílio para mobilização':'',f.pressure?'prevenção de lesão por pressão e mudanças de posição':''].filter(Boolean);
+  if(education.length)evolution.push('Oriento '+recipientReport(v)+' sobre '+education.join('; ')+(f.understanding?'. Compreensão / limitações observadas: '+f.understanding:''));
+  evolution.push(reportJoin([f.bell?'Campainha ao alcance':'',f.belongings?'utensílios pessoais ao alcance':'' ]));if(f.call)evolution.push('Oriento '+recipientReport(v)+' a chamar a equipe de enfermagem sempre que necessário');
+ }
+ evolution.push(v.events,v.results,v.plan);block('EVOLUÇÃO',evolution);
+ const text=blocks.map(b=>'#'+b.title+'\n\n'+b.lines.join(' ')).join('\n\n');
+ const when=v.savedAt?new Date(v.savedAt).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'Horário não registrado';
+ return {text,blocks,segments:blocks.flatMap(b=>b.lines.map(text=>({text,important:false}))),when};
+}
+function batchReport(patients){return patients.filter(p=>!p.deletedAt&&p.visit?.savedAt).sort((a,b)=>a.bed.localeCompare(b.bed,'pt-BR',{numeric:true})).map((p,i)=>{
+ const id=`LEITO ${p.bed} | IDENTIFICAÇÃO: ${p.code||'NÃO INFORMADA'} | REGISTRO: ${p.record||'NÃO INFORMADO'}`;
+ return `========== INÍCIO DA EVOLUÇÃO ${i+1} ==========\n${id}\nVISITA SALVA EM: ${stampBR(p.visit.savedAt)}\nCONFIRA A IDENTIFICAÇÃO ANTES DE COLAR NO PRONTUÁRIO\n\n${buildReport(p).text}\n\nFIM DA EVOLUÇÃO ${i+1} — ${id}\n============================================`;
+}).join('\n\n\n');}
+
+let db,loadProblem='';
+try{const raw=localStorage.getItem(STORAGE_KEY),old=localStorage.getItem(OLD_KEY);db=raw?normalizeDB(JSON.parse(raw)):old?normalizeDB(JSON.parse(old)):blankDB();}catch(e){db=blankDB();loadProblem='Não foi possível carregar os dados anteriores. Eles não foram sobrescritos. Exporte ou restaure um backup antes de continuar. '+e.message;}
+let ui={tab:'painel',current:db.patients.find(p=>p.status==='active'&&!p.deletedAt)?.id||'',modal:null,admission:null,search:'',filter:'active',open:new Set(),errors:[],toast:'',reportId:'',batchIds:[],batchText:'',storageError:false};
+let fieldCount=0;
+const $=s=>document.querySelector(s), patient=()=>db.patients.find(p=>p.id===ui.current&&!p.deletedAt),activePatients=()=>db.patients.filter(p=>p.status==='active'&&!p.deletedAt);
+function visit(){const p=patient();if(!p)return blankVisit();if(!p.draft){p.draft=p.visit?migrateVisit(p.visit):migrateVisit(null);p.draft.sector ||= p.sector;}return p.draft;}
+function persist(){if(loadProblem)return false;try{localStorage.setItem(STORAGE_KEY,JSON.stringify(db));ui.storageError=false;return true;}catch(e){ui.storageError=true;return false;}}
+function syncCurrent(){const p=patient();if(p){const v=visit();manualPending(db,p,v);syncTasks(db,p,v);}return persist();}
+function toast(text){ui.toast=text;render();clearTimeout(toast.timer);toast.timer=setTimeout(()=>{ui.toast='';const el=$('.toast');if(el)el.remove();},3500);}
+function btn(label,action,attrs='',cls='secondary'){return `<button type="button" class="btn ${cls}" data-action="${action}" ${attrs}>${label}</button>`;}
+function input(path,label,type='text',extra=''){const val=value(visit(),path),fid='f-'+(++fieldCount);return `<div class="field"><label for="${fid}">${label}</label><input id="${fid}" data-field="${path}" type="${type}" value="${esc(val??'')}" ${extra}></div>`;}
+function textArea(path,label){const fid='f-'+(++fieldCount);return `<div class="field full"><label for="${fid}">${label}</label><textarea id="${fid}" data-field="${path}">${esc(value(visit(),path)||'')}</textarea></div>`;}
+function optionPair(x){const a=String(x).split('|');return a.length>1?[a[0],a.slice(1).join('|')]:[String(x),String(x)];}
+function choices(path,label,options,multi=false){const current=value(visit(),path);return `<fieldset class="field"><legend>${label}</legend><div class="chips">${options.map(x=>{const [val,lab]=optionPair(x),selected=multi?arr(current).includes(val):String(current??'')===val;return `<button type="button" class="chip ${selected?'selected':''}" data-choice="${path}" data-value="${esc(val)}" ${multi?'data-multi="true"':''} aria-pressed="${selected}">${esc(lab)}</button>`;}).join('')}<button type="button" class="chip clear" data-choice="${path}" data-clear="true" ${multi?'data-multi="true"':''} aria-label="Limpar ${esc(label)}">×</button></div></fieldset>`;}
+function select(path,label,options,placeholder='Não informado'){const fid='f-'+(++fieldCount);return `<div class="field"><label for="${fid}">${label}</label><select id="${fid}" data-field="${path}"><option value="">${placeholder}</option>${options.map(x=>{const [val,lab]=optionPair(x);return `<option value="${esc(val)}" ${String(value(visit(),path)??'')===val?'selected':''}>${esc(lab)}</option>`;}).join('')}</select></div>`;}
+function check(path,label,cls=''){return `<label class="check ${cls}"><input type="checkbox" data-field="${path}" ${value(visit(),path)?'checked':''}>${label}</label>`;}
+function detail(key,title,html){return `<details data-open="${key}" ${ui.open.has(key)?'open':''}><summary>${title}</summary>${html}</details>`;}
+function section(id,num,title,html){return `<section id="${id}" class="card section"><header class="section-head"><h2><span>${num}</span>${title}</h2></header>${html}</section>`;}
+
+function sourceLink(i){return `<a href="${SOURCES[i][1]}" target="_blank" rel="noopener">${SOURCES[i][0]}</a>`;}
+function locationFields(base,type='body'){const d=value(visit(),base)||{};if(type==='device'&&d.type==='Sonda vesical')return '';const options=type==='body'?BODY_SITES:(SITES[d.type]||['Outro']);return `<div class="grid">${select(base+'.site','Sítio / local',options)}${type==='device'&&d.type==='Cistostomia'?'':select(base+'.side','Lateralidade',SIDES)}${d.site==='Outro'?input(base+'.siteOther','Descrever outro local'):''}</div>`;}
+
+function neuroUI(){const v=visit(),n=v.neuro;let html='';
+ if(n.scale==='Glasgow')html=Object.entries(GCS).map(([k,opts])=>choices('neuro.gcs.'+k,{ao:'Abertura ocular (AO)',rv:'Resposta verbal (RV)',rm:'Resposta motora (RM)'}[k],opts)).join('');
+ if(n.scale==='AVDI')html=choices('neuro.avdi','Resposta observada',['Alerta','Responde à voz','Responde à dor','Irresponsivo']);
+ if(n.scale==='FOUR')html=Object.entries(FOUR).map(([k,opts])=>choices('neuro.four.'+k,k[0].toUpperCase()+k.slice(1),opts)).join('');
+ if(n.scale==='NIHSS')html=`<p class="note">Registro do resultado aplicado com o instrumento institucional completo. ${sourceLink(2)}. Não é uma versão abreviada para aplicação.</p>${input('neuro.nihss','Resultado NIHSS (0–42)','number','min="0" max="42" step="1"')}`;
+ return `<div class="toolbar"><strong>${esc(n.scale)}</strong>${detail('neuro-switch','Trocar escala',choices('neuro.scale','Escala neurológica',['Glasgow','AVDI','FOUR','NIHSS']))}</div>${html}<p class="note">${esc(neuroText(v)||'Nenhum resultado presumido. Assinale os componentes avaliados.')}</p>${Object.values(n.gcs||{}).includes('NT')||n.scale==='NIHSS'?input('neuro.reason','Limitação / motivo do não testável'):''}${detail('neuro-ref','Consultar referência',sourceLink(n.scale==='Glasgow'?0:n.scale==='FOUR'?1:2))}`;
+}
+function painUI(){return assessmentUI('pain',painDetailsUI());}
+function painDetailsUI(){const p=visit().pain;let h='';
+ if(!p.unable){
+  if(p.scale==='Numérica')h=choices('pain.score','Intensidade relatada (0 = sem dor; 10 = máxima)',Array.from({length:11},(_,i)=>String(i)));
+  if(p.scale==='Faces')h=`<p class="note">Registre a face escolhida no instrumento oficial do serviço. ${sourceLink(3)}</p>${choices('pain.face','Pontuação FPS-R',['0','2','4','6','8','10'])}`;
+  if(p.scale==='PAINAD')h=Object.entries(PAINAD).map(([k,opts])=>choices('pain.painad.'+k,{resp:'Respiração',voz:'Vocalização negativa',face:'Expressão facial',corpo:'Linguagem corporal',consolo:'Consolabilidade'}[k],opts)).join('');
+  if(p.scale==='CPOT')h=choices('pain.mode','Condição para o componente respiratório',['Intubado','Não intubado'])+['face','corpo','musculo',...(p.mode?[p.mode==='Intubado'?'ventilador':'voz']:[])].map(k=>choices('pain.cpot.'+k,{face:'Expressão facial',corpo:'Movimentos',musculo:'Tensão muscular',ventilador:'Adaptação ao ventilador',voz:'Vocalização'}[k],CPOT[k])).join('');
+  if(p.scale==='COMFORT-B'){
+   const respiratory=p.comfortMode==='Ventilação mecânica'?'respiracao':p.comfortMode==='Respiração espontânea'?'choro':'';
+   h=`<p class="note">Registro após aplicar a COMFORT-B, conforme população e protocolo do serviço (instrumento original pediátrico): seis itens de 1 a 5, total de 6 a 30. ${sourceLink(11)}</p>${choices('pain.comfortMode','Condição respiratória da avaliação',['Ventilação mecânica','Respiração espontânea'])}<div class="grid">${['alerta','calma','movimento','tonus','face',...(respiratory?[respiratory]:[])].map(k=>choices('pain.comfort.'+k,COMFORT_ITEMS[k],['1','2','3','4','5'])).join('')}</div>`;
+  }
+ }
+ return `<div class="toolbar"><strong>${esc(p.scale)}</strong>${choices('pain.scale','Escala',['Numérica','Faces','PAINAD','CPOT','COMFORT-B|COMFORT Behavior (COMFORT-B)'])}</div>${check('pain.unable','Não foi possível avaliar')}${p.unable?input('pain.reason','Motivo'):h}<div class="grid">${input('pain.location','Local da dor')}${input('pain.notes','Observação')}</div><p class="note">${esc(painText(visit())||'Aguardando avaliação.')}</p>${['PAINAD','CPOT'].includes(p.scale)?detail('pain-reference','Referência e aplicação',sourceLink(p.scale==='PAINAD'?4:5)):''}`;
+}
+
+function respiratoryUI(){const r=visit().respiratory;return `${choices('respiratory.oxygen','Oxigenação / suporte',['Ar ambiente','Cânula nasal','Ventilação mecânica','VNI','Cânula nasal de alto fluxo','Máscara não reinalante','Máscara de Venturi'])}${r.oxygen&&r.oxygen!=='Ar ambiente'?input('respiratory.flow','Fluxo (L/min)','number','min="0" step="0.1"'):''}${detail('resp-vitals','SpO₂ e frequência respiratória',`<div class="grid">${input('respiratory.spo2','SpO₂ (%)','number','min="0" max="100" step="1"')}${input('respiratory.rate','Frequência respiratória (irpm)','number','min="0" step="1"')}</div>`)}${assessmentUI('respiratory',`${choices('respiratory.pattern','Padrão respiratório',['Eupneico','Dispneico','Taquipneico','Bradipneico','Apneia'])}${choices('respiratory.mv','Murmúrios vesiculares',['Presentes','Diminuídos','Ausentes'])}${['Diminuídos','Ausentes'].includes(r.mv)?choices('respiratory.mvSites','Localização dos murmúrios alterados',LUNG_SITES,true):''}${choices('respiratory.adventitious','Ruídos adventícios',['Ausentes','Presentes'])}${r.adventitious==='Presentes'?`<div class="nested">${r.sounds.map((x,i)=>`<div class="repeater"><header><strong>Ruído ${i+1}</strong>${btn('Remover','remove-row',`data-list="respiratory.sounds" data-index="${i}"`,'danger small')}</header>${choices('respiratory.sounds.'+i+'.type','Tipo',['Estertor','Sibilo','Ronco'])}${choices('respiratory.sounds.'+i+'.sites','Lobo / lado',LUNG_SITES,true)}</div>`).join('')}${btn('+ Outro ruído','add-sound')}</div>`:''}`)}`;}
+
+function cardioUI(){return assessmentUI('cardio',cardioDetailsUI());}
+function cardioDetailsUI(){const c=visit().cardio;return `<div class="grid">${choices('cardio.hemodynamic','Condição hemodinâmica avaliada',['Hemodinamicamente estável','Hemodinamicamente instável'])}${input('cardio.pa','Pressão arterial (mmHg)','text','placeholder="Ex.: 120/80"')}${input('cardio.hr','Frequência cardíaca (bpm)','number','min="0" step="1"')}${input('general.temperature','Temperatura (°C)','number','min="20" max="45" step="0.1"')}</div>${choices('cardio.edema','Edema',['Ausente','Presente'])}${c.edema==='Presente'?`<div class="nested">${choices('cardio.edemaGrade','Graduação',['1+','2+','3+','4+'])}${input('cardio.edemaSite','Localização do edema')}</div>`:''}<div class="grid">${choices('cardio.pulseRhythm','Pulso periférico — ritmo',['Rítmico','Arrítmico'])}${choices('cardio.pulseVolume','Pulso periférico — amplitude',['Cheio','Fino'])}${select('cardio.pulseSite','Local do pulso',['Radial direito','Radial esquerdo','Radiais bilateralmente','Pedioso direito','Pedioso esquerdo','Pediosos bilateralmente','Tibial posterior direito','Tibial posterior esquerdo','Femoral direito','Femoral esquerdo'])}${choices('cardio.tec','Tempo de enchimento capilar',['≤ 3 segundos','> 3 segundos'])}${choices('cardio.jugular','Turgência jugular',['Ausente','Presente'])}${choices('cardio.soundsRhythm','Bulhas — ritmo',['Rítmicas','Arrítmicas'])}${choices('cardio.soundsAudibility','Bulhas — audibilidade',['Normofonéticas','Audíveis','Abafadas'])}${choices('cardio.valveClick','Clique de válvula metálica',['Presente','Ausente'])}</div>${choices('cardio.murmur','Sopro',['Ausente','Presente'])}${c.murmur==='Presente'?choices('cardio.murmurSites','Focos',['Aórtico','Tricúspide','Mitral','Pulmonar'],true):''}${choices('cardio.implant','Dispositivo cardíaco',['Marcapasso','CDI','Marcapasso/CDI','Não identificado'])}${c.implant&&c.implant!=='Não identificado'?`<div class="grid">${select('cardio.implantSite','Localização',['Infraclavicular','Peitoral','Abdominal','Outro'])}${select('cardio.implantSide','Lado',SIDES)}${c.implantSite==='Outro'?input('cardio.implantOther','Outro local'):''}</div>`:''}`;}
+function abdomenUI(){return assessmentUI('abdomen',abdomenDetailsUI());}
+function abdomenDetailsUI(){const a=visit().abdomen;return `${choices('abdomen.inspection','Inspeção',['Flácido','Plano','Globoso','Distendido','Escavado'])}${choices('abdomen.rh','Ruídos hidroaéreos (RH)',['Presentes','Ausentes'])}${choices('abdomen.tender','Palpação',['Indolor','Doloroso'])}${a.tender==='Doloroso'?choices('abdomen.sites','Quadrantes / regiões dolorosas',ABD_SITES,true):''}`;}
+function mobilityUI(){return assessmentUI('mobility',mobilityDetailsUI());}
+function mobilityDetailsUI(){const m=visit().mobility;return `${choices('mobility.mode','Mobilidade',['Deambula sem auxílio','Deambula com auxílio','Restrito ao leito','Mobilidade reduzida'])}${m.mode==='Deambula com auxílio'?`<div class="nested">${choices('mobility.aids','Auxílio utilizado',['Bengala','Andador','Muleta','Auxílio de pessoa','Outro'],true)}${arr(m.aids).includes('Outro')?input('mobility.other','Descrever outro auxílio'):''}</div>`:''}`;}
+function skinUI(){return assessmentUI('skin',skinDetailsUI());}
+function skinDetailsUI(){const s=visit().skin;return `${choices('skin.colors','Coloração',['Corado','Hipocorado','Cianótico','Acianótico','Ictérico','Anictérico'],true)}${arr(s.colors).includes('Hipocorado')?choices('skin.pallor','Grau de hipocoração',['1+','2+','3+','4+']):''}${choices('skin.integrity','Integridade da pele',['Íntegra','Lesões presentes','Hiperemia'])}<div class="actions">${btn('+ Lesão por pressão','add-wound','data-type="Lesão por pressão"')}${btn('+ Outras lesões','add-wound','data-type="Outra lesão"')}${btn('+ Flebite','add-phlebitis')}${btn('Prevenção','toggle-prevention')}</div>
+ ${s.wounds.map((w,i)=>{const base='skin.wounds.'+i;return `<div class="repeater"><header><h3>${esc(w.type)} ${i+1}</h3>${btn('Remover','remove-row',`data-list="skin.wounds" data-index="${i}"`,'danger small')}</header>${w.type==='Lesão por pressão'?choices(base+'.stage','Estágio / classificação',['Estágio 1','Estágio 2','Estágio 3','Estágio 4','Não classificável','Lesão tissular profunda','Lesão em membrana mucosa']):''}${locationFields(base)}${textArea(base+'.description','Descrição da lesão')}${input(base+'.dressing','Curativo atual')}<div class="grid">${!w.dressingUnknown?input(base+'.dressingDate','Data do curativo da lesão','date'):''}${check(base+'.dressingUnknown','Data do curativo: Sem informação')}</div>${check(base+'.needsChange','Necessita troca de curativo — gerar pendência')}</div>`;}).join('')}
+ ${s.phlebitis.map((ph,i)=>{const base='skin.phlebitis.'+i;return `<div class="repeater"><header><h3>Flebite ${i+1}</h3>${btn('Remover','remove-row',`data-list="skin.phlebitis" data-index="${i}"`,'danger small')}</header>${choices(base+'.grade','Grau de Maddox',['0','1','2','3','4','5'])}${detail('maddox-'+ph.id,'Consultar escala de Maddox',`<ul>${MADDOX.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p class="muted">Tabela de apoio; não gera diagnóstico ou tratamento por pontuação. ${sourceLink(6)}</p>`)}${locationFields(base)}<div class="grid">${choices(base+'.hirudoid','Já utiliza Hirudoid?',['Sim','Não','Não confirmado'])}${choices(base+'.camomila','Já utiliza camomila?',['Sim','Não','Não confirmado'])}</div><p class="muted">Sem confirmação, a pendência será conferir indicação/prescrição e providenciar entrega quando prevista.</p></div>`;}).join('')}
+ ${ui.open.has('prevention')||s.prevention.some(x=>x.status)?`<div class="nested"><h3>Prevenção — proteções</h3>${s.prevention.map((pr,i)=>{const base='skin.prevention.'+i;return `<div class="repeater">${choices(base+'.status',pr.site,['Com proteção','Sem proteção'])}${pr.status==='Com proteção'?`<div class="grid">${!pr.unknown?input(base+'.date','Data de aplicação','date'):''}${check(base+'.unknown','Data sem informação')}</div>`:''}</div>`;}).join('')}</div>`:''}`;}
+function devicePicker(path,type){const devices=visit().devices.filter(d=>type==='venous'?VENOUS.includes(d.type):d.type===type);return `<div class="field"><label>Dispositivo instalado</label><select data-field="${path}"><option value="">Selecionar</option>${devices.map(d=>`<option value="${d.id}" ${value(visit(),path)===d.id?'selected':''}>${esc(deviceLabel(d))} · dispositivo ${visit().devices.indexOf(d)+1}</option>`).join('')}</select></div>`;}
+function deviceFields(d,index,compact=false){const base='devices.'+index,dr=d.dressing,e=d.enteral;return `${locationFields(base,'device')}${d.type==='Sonda vesical'?choices(base+'.fixationSite','Local da fixação',['Região inguinal direita','Região inguinal esquerda','Suprapúbica','Sem informação']):''}<div class="grid">${input(base+'.caliber','Calibre (inclua unidade: Fr ou G)')}${!d.dateUnknown?input(base+'.date','Data de inserção','date'):''}${check(base+'.dateUnknown','Data de inserção: Sem informação')}</div>
+ ${['PICC','CVC'].includes(d.type)?choices(base+'.lumens','Lúmens',['Monolúmen','Duplo lúmen','Triplo lúmen']):d.type==='Shilley'?choices(base+'.lumens','Vias',['2 vias','3 vias']):''}
+ ${VENOUS.includes(d.type)?`<div class="nested"><h3>Curativo do acesso</h3><div class="grid">${!dr.unknown?input(base+'.dressing.date','Data do curativo','date'):''}${check(base+'.dressing.unknown','Data do curativo: Sem informação')}</div>${choices(base+'.dressing.state','Estado do curativo',['Íntegro','Sujo','Com sangue','Descolando','Úmido'],true)}<p class="muted">${d.type==='AVP'?'Lembrete de revisão por data: '+Math.ceil(db.settings.avpHours/24)+' dia(s). Sem estimar hora de inserção.':'Prazo configurado do curativo: '+db.settings.dressingDays+' dias.'}${d.type==='Cateter longo'?' O cateter longo não tem vencimento por tempo de permanência.':''}</p></div>`:''}
+ ${d.type==='AVP'?`<div class="grid">${choices(base+'.phlogistic','Sinais flogísticos',['Ausente','Presente','Não avaliado'])}${choices(base+'.extravasation','Extravasamento',['Ausente','Presente','Não avaliado'])}</div>${!d.dateUnknown&&dayAge(d.date)!==null&&dayAge(d.date)>=Math.ceil(db.settings.avpHours/24)?`<p class="notice">Lembrete de revisão do AVP pela data de inserção. Avaliar conforme protocolo do serviço.</p>${check(base+'.difficult','ACESSO DIFÍCIL — manter sinalizado para avaliação')}`:d.difficult?check(base+'.difficult','ACESSO DIFÍCIL'):''}${d.phlogistic==='Presente'||d.extravasation==='Presente'?input(base+'.notes','Descrição dos achados no AVP'):''}`:''}
+ ${d.type==='Sonda enteral'?`<div class="nested"><h3>Sonda enteral — avaliação obrigatória</h3><p class="muted">Preenchimento compartilhado com Nutrição. Se não souber, registre “Sem informação”; nenhuma confirmação é presumida.</p>${choices(base+'.enteral.fixation','Fixação',['Adequada e bem aderida','Inadequada','Necessita troca','Não avaliada'])}<div class="grid">${input(base+'.enteral.mark','Marca externa (cm)','number','min="0" step="0.1"')}${choices(base+'.enteral.head','Decúbito / cabeceira',['30°–45°','Acima de 45°','Abaixo de 30°','Não avaliado'])}</div>${choices(base+'.enteral.feedState','Infusão pela sonda',['Infundindo','Não está infundindo','Sem informação'])}${e.feedState==='Infundindo'?`<div class="grid">${input(base+'.enteral.formula','Dieta / solução infundida')}${choices(base+'.enteral.dietType','Classificação da dieta',['Padrão','Hipercalórica','Outra'])}${input(base+'.enteral.rate','Taxa de infusão (mL/h)','number','min="0" step="0.1"')}</div>`:''}${choices(base+'.enteral.position','Verificação do posicionamento conforme protocolo',['Realizada','Não realizada','Sem informação'])}${e.position==='Realizada'?`<div class="grid">${input(base+'.enteral.method','Método conforme protocolo institucional')}${choices(base+'.enteral.result','Resultado',['Posicionamento confirmado','Posicionamento não confirmado','Inconclusivo'])}</div>`:''}</div>`:''}
+ ${d.type==='Dreno'?`<div class="nested">${choices(base+'.drain.type','Tipo de dreno',['Tórax','Mediastinal','Portovac','Blake','Jackson-Pratt','Penrose','Kehr','Pigtail','Outro'])}${d.drain.type==='Outro'?input(base+'.drain.otherType','Qual dreno?'):''}<div class="grid">${check(base+'.drain.noOutput','Sem débito')}${!d.drain.noOutput?input(base+'.drain.output','Débito (mL)','number','min="0" step="0.1"'):''}${input(base+'.drain.period','Período da quantificação','text','placeholder="Ex.: últimas 6h"')}</div>${choices(base+'.drain.aspect','Aspecto',['Seroso','Serossanguinolento','Sanguinolento','Purulento','Bilioso','Quiloso','Fecaloide','Outro'])}${d.drain.aspect==='Outro'?input(base+'.drain.aspectOther','Outro aspecto'):''}${choices(base+'.drain.color','Coloração',['Amarelo claro','Amarelo escuro','Róseo','Vermelho vivo','Vermelho escuro','Esverdeado','Esbranquiçado','Castanho','Outra'])}${d.drain.color==='Outra'?input(base+'.drain.colorOther','Outra coloração'):''}${d.drain.type==='Tórax'?choices(base+'.drain.oscillation','Oscilação',['Presente','Ausente','Não avaliada']):''}</div>`:''}`;}
+function linkedDeviceUI(path,type){const id=value(visit(),path),index=visit().devices.findIndex(d=>d.id===id&&d.type===type);return `<div class="nested">${devicePicker(path,type)}${btn('+ Adicionar outra '+type.toLowerCase(),'add-device',`data-type="${type}" data-link="${path}"`)}${index>=0?deviceFields(visit().devices[index],index,true):'<p class="muted">Selecione ou adicione o dispositivo. O cadastro é compartilhado com a seção Dispositivos.</p>'}</div>`;}
+function eliminationUI(){const v=visit(),u=v.urinary,b=v.bowel;return `<h3>Eliminações urinárias</h3>${choices('urinary.method','Via da diurese',['Espontânea','Sonda vesical','Cistostomia','Nefrostomia','Sem informação'])}${assessmentUI('urinary',`${choices('urinary.status','Diurese',['Presente','Ausente no período','Oligúria','Anúria'])}${choices('urinary.color','Coloração',['Amarelo claro','Amarelo escuro','Âmbar','Rósea','Avermelhada','Castanha','Incolor','Outra'])}${u.color==='Outra'?input('urinary.colorOther','Outra coloração'):''}<div class="grid">${choices('urinary.clumps','Grumos',['Ausentes','Presentes'])}${choices('urinary.blood','Sangramento visível',['Ausente','Presente'])}</div>`)}${choices('urinary.quantified','Diurese quantificada?',['Sim','Não'])}${u.quantified==='Sim'?`<div class="grid">${input('urinary.volume','Volume (mL)','number','min="0" step="0.1"')}${input('urinary.period','Período da quantificação','text','placeholder="Ex.: últimas 6h"')}</div>`:''}${URINARY_DEVICES.includes(u.method)?linkedDeviceUI('urinary.deviceId',u.method):''}
+ <hr><h3>Eliminações intestinais</h3>${assessmentUI('bowel',`${choices('bowel.status','Evacuação',['Presente','Ausente no período'])}${b.status==='Presente'?choices('bowel.bristol','Consistência — Escala de Bristol',BRISTOL):''}${check('bowel.diarrhea','Diarreia')}${b.diarrhea?`<div class="grid">${input('bowel.days','Há quantos dias?','number','min="0" step="1"')}${input('bowel.episodes','Episódios nas últimas 24h','number','min="0" step="1"')}</div>`:''}`)}<div class="grid">${!b.unknown?input('bowel.lastDate','Data da última evacuação','date'):''}${check('bowel.unknown','Não sabe informar a data da última evacuação')}</div>${check('bowel.clostridium','Isolamento por Clostridioides difficile instituído')}`;}
+
+function safetyUI(){const s=visit().safety;return `${choices('safety.meta1Status','Identificação do paciente',['Meta 1 OK','Não conformidade'])}${s.meta1Status==='Meta 1 OK'?'<p class="quick-summary">✓ Identificação conferida e pulseira de identificação presente e adequada.</p>':s.meta1Status==='Não conformidade'||s.idBand?`<div class="nested">${choices('safety.idBand','Pulseira de identificação',['Presente e adequada','Ausente','Necessita troca'])}${input('safety.meta1Reason','Descrever a não conformidade, se necessário')}</div>`:'<p class="muted">Meta 1 OK confirma a verificação da identificação e a pulseira adequada.</p>'}
+ ${choices('safety.allergyStatus','Alergias informadas',['Negadas pelo paciente','Negadas pelo acompanhante','Negadas por ambos','Alergia conhecida','Não foi possível obter informação'])}${s.hasAllergy||s.allergyStatus==='Alergia conhecida'?input('safety.allergy','Qual alergia?')+choices('safety.allergyBand','Pulseira de alergia',['Presente e adequada','Ausente','Necessita troca']):''}
+ ${assessmentUI('safety',`<div class="grid">${choices('safety.fallBand','Pulseira de risco de queda',['Presente e adequada','Ausente','Necessita troca','Não indicada conforme protocolo'])}${check('safety.wheels','Rodas travadas')}${check('safety.lowBed','Cama baixa')}${check('safety.headUp','Cabeceira elevada')}</div>`,'Demais medidas de segurança')}`;}
+
+function nutritionUI(){const n=visit().nutrition;return `${choices('nutrition.routes','Via / situação da dieta',['Dieta oral','Dieta enteral','Jejum'],true)}${arr(n.routes).includes('Jejum')?`<div class="nested fasting-editor">${choices('nutrition.fastingKind','Motivo do jejum',['Clínico','Ag. procedimento','Ag. exame'])}${['Ag. procedimento','Ag. exame'].includes(n.fastingKind)?input('nutrition.awaiting',n.fastingKind==='Ag. procedimento'?'Qual procedimento aguarda?':'Qual exame aguarda?'):''}${!n.fastingKind?input('nutrition.reason','Motivo registrado / outras informações'):''}<p class="muted">O jejum e o que o paciente aguarda aparecem no card de pacientes.</p></div>`:assessmentUI('nutrition',arr(n.routes).includes('Dieta oral')?choices('nutrition.acceptance','Aceitação da dieta oral',['Boa aceitação','Aceitação parcial','Sem aceitação','Não avaliada']):'<p class="muted">Selecione a via de nutrição utilizada.</p>')}${arr(n.routes).includes('Dieta enteral')?linkedDeviceUI('nutrition.deviceId','Sonda enteral'):''}`;}
+
+function devicesUI(){const v=visit();return `<div class="actions">${btn('Sem dispositivos','no-devices','','ghost small')}${DEVICE_TYPES.map(t=>btn('+ '+t,'add-device',`data-type="${t}"`,'secondary small')).join('')}</div>${v.devices.map((d,i)=>`<details class="repeater" data-open="device-${d.id}" ${ui.open.has('device-'+d.id)?'open':''}><summary>${esc(deviceLabel(d))} <span class="badge dim">${i+1}</span></summary><div class="toolbar">${d.type==='Outro'?input('devices.'+i+'.otherType','Nome do dispositivo'):''}${btn('Remover dispositivo','remove-device',`data-id="${d.id}"`,'danger small')}</div>${deviceFields(d,i)}</details>`).join('')||'<p class="empty">Nenhum dispositivo cadastrado. Use os botões acima.</p>'}${textArea('deviceNotes','Observações adicionais dos dispositivos')}`;}
+function infusionsUI(){const v=visit();return `${v.infusions.map((i,idx)=>{const base='infusions.'+idx,d=v.devices.find(d=>d.id===i.deviceId),di=v.devices.indexOf(d);return `<div class="repeater"><header><h3>Infusão ${idx+1}${i.name?' · '+esc(i.name):''}</h3>${btn('Remover','remove-row',`data-list="infusions" data-index="${idx}"`,'danger small')}</header><div class="grid">${input(base+'.name','Medicação / solução')}${input(base+'.rate','Vazão (mL/h)','number','min="0" step="0.1"')}${input(base+'.date','Data de instalação','date')}${input(base+'.time','Hora (digitar HH:mm)','text','placeholder="08:30" inputmode="numeric" maxlength="5"')}</div>${devicePicker(base+'.deviceId','venous')}${!v.devices.some(d=>VENOUS.includes(d.type))?'<p class="notice">Cadastre primeiro um acesso venoso em Dispositivos.</p>':''}${d?.type==='AVP'?`<div class="nested"><p class="muted">Avaliação deste AVP — compartilhada com Dispositivos</p>${choices('devices.'+di+'.phlogistic','Sinais flogísticos',['Ausente','Presente','Não avaliado'])}${choices('devices.'+di+'.extravasation','Extravasamento',['Ausente','Presente','Não avaliado'])}</div>`:''}</div>`;}).join('')}${btn('+ Adicionar infusão','add-infusion')}`;}
+function finishUI(){const f=visit().finish;return `${choices('finish.guidance','Verificações da Meta 5 e orientações finais realizadas?',['Sim','Não'])}<p class="muted">Sim confirma higiene das mãos e prevenção de infecções, cuidados com dispositivos, prevenção de quedas e lesões por pressão, campainha e pertences ao alcance e orientação para chamar a equipe.</p>${f.guidance==='Não'?textArea('finish.guidanceReason','Motivo de não realizar as orientações'):f.guidance==='Sim'?`<p class="quick-summary">✓ Orientações registradas para ${esc(recipientReport(visit()))}.</p>`:''}${f.guidance==='Sim'||f.fall||f.pressure?detail('education-details','Revisar destinatário e tópicos',`${choices('finish.recipient','Quem recebeu as orientações?',['Paciente','Acompanhante','Paciente e acompanhante'])}${input('finish.understanding','Compreensão / limitações observadas')}<div class="grid">${check('finish.handHygiene','Orientação de higiene das mãos')}${check('finish.infection','Prevenção de infecções')}${check('finish.deviceCare','Cuidados com sondas, cateteres e curativos')}${check('finish.fall','Prevenção de quedas e auxílio para mobilização')}${check('finish.pressure','Prevenção de lesão por pressão')}${check('finish.bell','Campainha ao alcance')}${check('finish.belongings','Utensílios pessoais ao alcance')}${check('finish.call','Orientado a chamar a equipe')}</div>`):''}${detail('finish-extra','Intercorrências, resposta e continuidade',textArea('events','Intercorrências, comunicação à equipe e condutas realizadas')+textArea('results','Resposta aos cuidados / reavaliação')+textArea('plan','Planejamento / continuidade da assistência'))}<div class="nested"><h3>Pendências pessoais</h3>${input('manualTask','Adicionar pendência — salva automaticamente','text','placeholder="Ex.: providenciar material"')}${btn('+ Outra pendência','next-manual-task','','ghost small')}<div id="visit-task-summary">${currentTaskSummary()}</div></div>`;}
+
+function currentTaskSummary(){return openTasks(db,ui.current).map(t=>`<p class="muted">• ${esc(t.text)}</p>`).join('')||'<p class="muted">Nenhuma pendência aberta.</p>';}
+function visitPatientList(){return `<section class="card empty"><h2>Selecione um paciente para avaliar</h2><p>Use Abrir visita no card do paciente.</p>${btn('Ver cards dos pacientes','nav','data-tab="painel"','')}</section>`;}
+
+function visitView(){const p=patient();if(!p||p.status!=='active')return visitPatientList();const v=visit();return `<section class="card selected-patient"><div class="toolbar"><div><span class="eyebrow">Paciente em avaliação</span><h2>Leito ${esc(p.bed)} · ${esc(p.code)} ${palliativeIndicator(p)}</h2><p class="muted">Registro: ${esc(p.record||'não informado')} · ${esc(p.sector)}</p></div><div class="actions">${btn('Pacientes','nav','data-tab="painel"','ghost small')}${btn('Editar paciente','admission-edit',`data-id="${p.id}"`,'ghost small')}${btn('Nova visita','new-round','','ghost small')}</div></div>${diagnosisBox(p)}${companionUI()}${check('finish.palliative','Paciente em cuidados paliativos')}${fastingReminder(p)}<p class="muted">Rascunho salvo automaticamente. Salvar visita fixa a hora da evolução.</p></section>
+ <nav class="jump no-print">${[['safety','Identificação'],['general','Estado geral'],['pain','Dor'],['resp','Respiratório'],['cardio','Cardiovascular'],['abd','Abdome'],['skin','Pele'],['nutrition','Nutrição'],['elimination','Eliminações'],['devices','Dispositivos'],['infusions','Infusões'],['finish','Finalizar']].map(([id,l])=>`<a href="#${id}">${l}</a>`).join('')}</nav>
+ ${ui.errors.length?`<div class="notice error" role="alert"><strong>Complete ou revise antes de salvar:</strong><ul>${ui.errors.map(e=>`<li>${esc(e)}</li>`).join('')}</ul><p>O rascunho permanece salvo.</p></div>`:''}
+ ${section('safety','01','Identificação e segurança',safetyUI())}
+ ${section('general','02','Estado geral e avaliação neurológica',generalUI())}
+ ${section('pain','03','Dor',painUI())}
+ ${section('resp','04','Respiratório e oxigenoterapia',respiratoryUI())}
+ ${section('cardio','05','Cardiovascular',cardioUI())}
+ ${section('abd','06','Abdome',abdomenUI())}
+ ${section('mobility','07','Mobilidade',mobilityUI())}
+ ${section('skin','08','Pele, lesões e prevenção',skinUI())}
+ ${section('nutrition','09','Nutrição',nutritionUI())}
+ ${section('elimination','10','Eliminações',eliminationUI())}
+ ${section('findings','11','Observações adicionais',detail('physical-extra','Outras informações da avaliação',textArea('findings','Observações do exame físico')+(v.legacyNotes?`<p class="note">Registro anterior preservado: ${esc(v.legacyNotes)}</p>`:'')))}
+ ${section('devices','12','Dispositivos instalados',devicesUI())}
+ ${section('infusions','13','Infusões',infusionsUI())}
+ ${section('finish','14','Condutas e fechamento',finishUI())}
+ <div class="sticky no-print"><div><strong>Leito ${esc(p.bed)} · ${esc(p.code)}</strong><p class="muted" id="draft-status">Rascunho ${ui.storageError?'não salvo — exporte backup':'salvo neste aparelho'}</p></div><div class="actions">${btn('Pendências','nav','data-tab="pendencias"','ghost')}${btn('Salvar visita e gerar evolução','save-visit','','')}</div></div>`;}
+
+function dashboard(){const active=activePatients(),list=db.patients.filter(p=>(ui.filter==='deleted'?!!p.deletedAt:!p.deletedAt&&(ui.filter==='all'||p.status==='active'))&&[p.bed,p.code,p.record,p.sector,p.diagnosis].join(' ').toLowerCase().includes(ui.search.toLowerCase())).sort((a,b)=>a.bed.localeCompare(b.bed,'pt-BR',{numeric:true}));return `<section><div class="stats"><div class="stat"><strong>${active.length}</strong><span>Em acompanhamento</span></div><div class="stat"><strong>${active.filter(p=>p.visit).length}</strong><span>Com visita salva</span></div><div class="stat"><strong>${active.reduce((n,p)=>n+openTasks(db,p.id).length,0)}</strong><span>Pendências abertas</span></div></div><div class="card"><div class="toolbar"><h2>Pacientes</h2>${btn('+ Admissão','admission-new','','')}</div><div class="grid"><div class="field"><label>Buscar leito ou identificação</label><input data-search value="${esc(ui.search)}" placeholder="Ex.: 224B"></div><div class="field"><label>Mostrar</label><select data-patient-filter><option value="active" ${ui.filter==='active'?'selected':''}>Em acompanhamento</option><option value="all" ${ui.filter==='all'?'selected':''}>Todos, inclusive desfechos</option><option value="deleted" ${ui.filter==='deleted'?'selected':''}>Excluídos — restaurar cadastro</option></select></div></div></div><div class="patient-grid">${list.map(patientCard).join('')||'<div class="card empty">Nenhum paciente encontrado.</div>'}</div></section>`;}
+
+function taskRow(t){return `<div class="task task-card ${t.done||t.resolved?'done':''}"><div><p>${esc(t.text)}</p><small class="muted">${t.done?'Concluída em '+stampBR(t.doneAt):t.resolved?'Condição atualizada — não marcada como executada':t.autoKey?'Da avaliação':'Manual'}</small></div>${t.done?btn('Reabrir','task-reopen',`data-id="${t.id}"`,'ghost small'):t.resolved?'':btn('Concluir','task-done',`data-id="${t.id}"`,'secondary small')}</div>`;}
+
+function tasksView(){const pats=activePatients().sort((a,b)=>openTasks(db,b.id).length-openTasks(db,a.id).length||a.bed.localeCompare(b.bed,'pt-BR',{numeric:true}));return `<section><div class="card"><h2>Pendências por leito</h2><p class="muted">Tarefas visíveis por paciente. Conclua após realizar o cuidado.</p></div><div class="task-patient-grid">${pats.map(p=>{const open=openTasks(db,p.id),past=db.tasks.filter(t=>t.patientId===p.id&&(t.done||t.resolved));return `<article class="card task-patient-card"><div class="toolbar"><div><span class="bed-number">${esc(p.bed)}</span><h2>${esc(p.code)} ${palliativeIndicator(p)}</h2><span class="badge ${open.length?'warn':'dim'}">${open.length} aberta(s)</span></div>${btn('Abrir visita','open-patient',`data-id="${p.id}"`,'secondary small')}</div>${diagnosisBox(p)}<div class="task-cards">${open.map(taskRow).join('')||'<p class="note">Sem pendências abertas.</p>'}</div><div class="field"><label>+ Pendência — salva ao sair do campo</label><input data-manual-for="${p.id}" placeholder="Descreva a pendência"></div>${past.length?detail('past-'+p.id,`Concluídas / atualizadas (${past.length})`,past.map(taskRow).join('')):''}</article>`;}).join('')||'<div class="card empty">Nenhum paciente em acompanhamento.</div>'}</div></section>`;}
+
+function identity(p){return `<div class="identity"><strong>Leito ${esc(p.bed)} · ${esc(p.code)}</strong><span>Registro: ${esc(p.record||'não informado')} · ${esc(p.sector)}</span><p class="muted">Visita salva: ${stampBR(p.visit?.savedAt)||'não salva'}</p></div>`;}
+function reportView(){const candidates=db.patients.filter(p=>!p.deletedAt&&p.visit),p=candidates.find(p=>p.id===ui.reportId)||candidates.find(p=>p.id===ui.current)||candidates[0];if(p)ui.reportId=p.id;return `<section class="card print-target"><div class="toolbar no-print"><h2>Evolução de enfermagem</h2><div class="actions">${btn('Copiar todas as evoluções','batch-open','','')}${btn('Copiar esta evolução','copy-one','','secondary')}${btn('Imprimir','print','','ghost')}</div></div><div class="field no-print"><label>Paciente — confira antes de copiar</label><select data-report-patient>${candidates.map(x=>`<option value="${x.id}" ${x.id===p?.id?'selected':''}>Leito ${esc(x.bed)} · ${esc(x.code)} · ${stampBR(x.visit.savedAt)}</option>`).join('')}</select></div>${p?`${p.dirty?'<p class="notice no-print">Há rascunho em edição. Esta é a última visita salva.</p>':''}<p class="note no-print">Texto organizado conforme a visita salva. Confira a identificação e revise antes de copiar.</p><div class="report" id="report-text"><pre>${esc(buildReport(p).text)}</pre></div><div class="only-print print-signature">Conferido por: ______________________________ &nbsp; Registro profissional: __________________</div>`:'<p class="empty">Salve uma visita para gerar a evolução.</p>'}</section>`;}
+
+function settingsView(){return `<section class="card"><h2>Dados e configuração</h2><p class="note">Os dados ficam neste navegador e não são sincronizados entre aparelhos. Exporte um backup antes de atualizar ou trocar de aparelho.</p><div class="actions">${btn('Exportar backup JSON','export-json','','')}<label class="btn secondary">Importar backup<input type="file" id="import-backup" accept=".json,application/json" hidden></label></div><hr><h3>Prazos do serviço</h3><div class="grid"><div class="field"><label>Avaliar AVP após (horas)</label><input data-setting="avpHours" type="number" min="1" max="720" value="${db.settings.avpHours}"></div><div class="field"><label>Curativos de outros acessos venosos (dias)</label><input data-setting="dressingDays" type="number" min="1" max="30" value="${db.settings.dressingDays}"></div></div><p class="muted">Valores iniciais solicitados: AVP 48h e curativos 7 dias. O AVP usa agora lembretes por data (48h correspondem a 2 dias de calendário), sem afirmar o horário exato de vencimento. São alertas para revisão, não uma ordem de retirada. Adeque ao protocolo e ao tipo de cobertura. Cateter longo sem expiração por permanência; seu curativo continua monitorado.</p></section><section class="card"><h2>Referências e limites das escalas</h2><p class="note">Glasgow, AVDI e FOUR têm registro por componentes. NIHSS registra o resultado obtido no instrumento completo. Faces registra a pontuação escolhida no instrumento oficial do serviço, sem substituir as imagens por desenhos não validados. PAINAD, CPOT e COMFORT-B não têm pontuação presumida para itens vazios. COMFORT-B registra seis itens de 1 a 5, sem classificar automaticamente dor ou sedação.</p><ul>${SOURCES.map(([label,url])=>`<li><a href="${url}" target="_blank" rel="noopener">${label}</a></li>`).join('')}</ul><p class="muted">Protótipo de apoio à documentação, sem integração ao prontuário. Resultados e textos exigem conferência profissional. Versão ${APP_VERSION}.</p></section>`;}
+function admissionModal(){const a=ui.admission||{};const field=(key,label,type='text')=>`<div class="field"><label for="ad-${key}">${label}</label><input id="ad-${key}" data-admission="${key}" type="${type}" value="${esc(a[key]||'')}"></div>`;return `<div class="modal-bg"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="admission-title"><header class="modal-head"><h2 id="admission-title">${a.id?'Editar paciente':'Adicionar paciente'}</h2>${btn('Fechar','close-modal','','ghost small')}</header><p class="muted">Editar mantém as visitas, dispositivos e pendências no mesmo cadastro.</p><div class="grid">${field('bed','Leito *')}${field('code','Identificação do paciente *')}${field('record','Registro / prontuário (opcional)')}${field('diagnosis','Diagnóstico')}<div class="field"><label>Setor</label><select data-admission="sector">${SECTORS.map(s=>`<option ${a.sector===s?'selected':''}>${esc(s)}</option>`).join('')}</select></div>${field('date','Data da admissão','date')}${field('time','Hora da admissão (HH:mm)')}${field('origin','Procedência')}${field('reason','Motivo da admissão')}</div><div class="field"><label>Informações da admissão</label><textarea data-admission="notes">${esc(a.notes||'')}</textarea></div><div class="actions">${btn(a.id?'Salvar correções':'Cadastrar e iniciar visita','admission-save','','')}${btn('Cancelar','close-modal','','ghost')}</div></section></div>`;}
+function batchModal(){const pats=activePatients().filter(p=>p.visit?.savedAt).sort((a,b)=>a.bed.localeCompare(b.bed,'pt-BR',{numeric:true}));return `<div class="modal-bg"><section class="modal wide" role="dialog" aria-modal="true" aria-labelledby="batch-title"><header class="modal-head"><h2 id="batch-title">Copiar evoluções por paciente</h2>${btn('Fechar','close-modal','','ghost small')}</header><p class="note">Última visita salva de cada paciente selecionado. Rascunhos não salvos não entram na cópia. Os cabeçalhos servem para conferência; cada prontuário recebe apenas a evolução correspondente.</p>${pats.map(p=>`<label class="check"><input type="checkbox" data-batch-id="${p.id}" ${ui.batchIds.includes(p.id)?'checked':''}><span><strong>Leito ${esc(p.bed)} · ${esc(p.code)}</strong> · Registro ${esc(p.record||'não informado')}<small class="muted"> · ${stampBR(p.visit.savedAt)}${p.dirty?' · possui rascunho em edição':''}</small></span></label>`).join('')||'<p class="empty">Nenhuma visita salva em pacientes ativos.</p>'}<div class="actions">${btn('Preparar prévia separada','batch-preview','','secondary')}${btn('Copiar bloco revisado','batch-copy',ui.batchText?'':'disabled','')}</div>${ui.batchText?`<div class="field"><label>Prévia — início e fim identificados de cada evolução</label><textarea id="batch-copy-text" readonly style="min-height:330px">${esc(ui.batchText)}</textarea></div>`:''}</section></div>`;}
+function render(){fieldCount=0;let scroll=window.scrollY;const focused=document.activeElement?.dataset.field,selection=document.activeElement?.selectionStart;
+ const title={painel:['Acompanhamento','Painel de pacientes'],visita:['À beira-leito','Visita de enfermagem'],pendencias:['Continuidade do cuidado','Pendências por leito'],evolucao:['Registro assistencial','Evoluções de enfermagem'],dados:['Seu espaço de trabalho','Dados e referências']}[ui.tab];
+ const content={painel:dashboard,visita:visitView,pendencias:tasksView,evolucao:reportView,dados:settingsView}[ui.tab]();
+ $('#app').innerHTML=`<div class="shell"><aside><div class="brand"><span>✚</span> Ronda<small>VISITA DE ENFERMAGEM</small></div>${[['painel','▦ Pacientes'],['visita','✎ Visitas'],['pendencias','☑ Pendências'],['evolucao','▤ Evoluções'],['dados','⚙ Dados']].map(([tab,label])=>`<button class="nav ${ui.tab===tab?'active':''}" data-action="nav" data-tab="${tab}">${label}</button>`).join('')}<div class="sidefoot">Salvo neste navegador<br><span class="version">Ronda ${APP_VERSION}</span></div></aside><main><header class="top"><div><p class="eyebrow">${title[0]}</p><h1>${title[1]}</h1><p class="muted">Avaliar, acompanhar e registrar.</p></div><span class="badge dim">v${APP_VERSION}</span></header>${loadProblem?`<div class="notice error">${esc(loadProblem)}</div>`:''}${ui.storageError?'<div class="notice error">Não foi possível salvar os dados neste navegador. Exporte um backup.</div>':''}${ui.tab==='painel'?`<details class="note no-print"><summary>Protótipo de apoio — dados locais e revisão profissional</summary>Sem autenticação, criptografia de aplicação ou integração ao prontuário institucional. Use dados fictícios nos testes; a instituição deve autorizar o tratamento de dados assistenciais. Confira o texto antes de utilizá-lo.</details>`:''}${content}</main></div>${ui.modal==='admission'?admissionModal():ui.modal==='batch'?batchModal():''}${ui.toast?`<div class="toast" role="status">${esc(ui.toast)}</div>`:''}`;
+ if(focused){const el=document.querySelector(`[data-field="${focused}"]`);if(el){el.focus({preventScroll:true});try{if(selection!==null)el.setSelectionRange(selection,selection);}catch{}}}window.scrollTo(0,scroll);
+}
+function navigate(tab){syncCurrent();ui.tab=tab;ui.errors=[];if(tab==='pendencias'||tab==='painel')for(const p of activePatients())syncTasks(db,p,p.draft||p.visit||blankVisit());persist();render();window.scrollTo(0,0);}
+function startAdmission(id){syncCurrent();const p=db.patients.find(p=>p.id===id);ui.admission=p?{id:p.id,bed:p.bed,code:p.code,record:p.record,diagnosis:p.diagnosis||'',sector:p.sector,date:p.admission?.when?.slice(0,10)||'',time:p.admission?.when?.slice(11,16)||'',origin:p.admission?.origin||'',reason:p.admission?.reason||'',notes:p.admission?.notes||''}:{bed:'',code:'',record:'',diagnosis:'',sector:SECTORS[0],date:localISO().slice(0,10),time:localISO().slice(11,16),origin:'',reason:'',notes:''};ui.modal='admission';render();$('#ad-bed')?.focus();}
+function addDevice(type,link){const v=visit(),d=newDevice(type);v.devices.push(d);if(link)put(v,link,d.id);ui.open.add('device-'+d.id);return d;}
+function ensureLinked(path,type){const v=visit();if(v.devices.some(d=>d.id===value(v,path)&&d.type===type))return;const found=v.devices.find(d=>d.type===type);put(v,path,(found||addDevice(type)).id);}
+function applyChange(path,newValue){const v=visit(),previous=value(v,path);if(path==='nutrition.fastingKind'&&previous!==newValue)v.nutrition.awaiting='';put(v,path,newValue);
+ if(path==='nutrition.routes'){
+  if(newValue.includes('Dieta enteral'))ensureLinked('nutrition.deviceId','Sonda enteral');
+ }
+ if(path==='urinary.method'&&URINARY_DEVICES.includes(newValue))ensureLinked('urinary.deviceId',newValue);
+ if(path==='respiratory.adventitious'&&newValue==='Presentes'&&!v.respiratory.sounds.length)v.respiratory.sounds.push({id:uid(),type:'',sites:[]});
+ if(path==='neuro.scale')ui.open.delete('neuro-switch');if(path==='pain.scale')ui.open.delete('pain-switch');
+ if(path==='safety.hasAllergy'&&!newValue)v.safety.allergy='';
+ if(path==='bowel.unknown'&&newValue)v.bowel.lastDate='';
+ if(path.endsWith('.dateUnknown')&&newValue){const base=path.slice(0,-12);put(v,base+'.date','');put(v,base+'.time','');}
+ if(path.endsWith('.dressing.unknown')&&newValue)put(v,path.replace(/unknown$/,'date'),'');
+ if(path.endsWith('.dressingUnknown')&&newValue)put(v,path.replace(/dressingUnknown$/,'dressingDate'),'');
+ if(path==='respiratory.adventitious'&&newValue==='Ausentes')v.respiratory.sounds=[];
+ if(path==='cardio.implant'&&newValue==='Não identificado'){v.cardio.implantSite='';v.cardio.implantSide='';}
+ document.querySelectorAll('[data-field]').forEach(el=>{if(el.dataset.field===path){if(el.type==='checkbox')el.checked=!!newValue;else el.value=newValue??'';}});
+ applyQuickChange(v,path,newValue);const p=patient();if(p){p.dirty=true;if(path==='finish.palliative')p.palliative=!!newValue;}syncCurrent();
+}
+function saveVisit(){const p=patient();if(!p)return;const v=visit();let invalid=[...document.querySelectorAll('#app input[type="number"]')].filter(x=>!x.checkValidity());ui.errors=validateVisit(v);
+ for(const x of invalid)ui.errors.push('Valor inválido: '+(document.querySelector(`label[for="${x.id}"]`)?.textContent||x.dataset.field));
+ for(const i of v.infusions)if(i.time&&!/^([01]\d|2[0-3]):[0-5]\d$/.test(i.time))ui.errors.push('Hora inválida na infusão '+(i.name||'')+': use HH:mm.');
+ if(ui.errors.length){syncCurrent();render();$('.notice.error')?.scrollIntoView({behavior:'smooth',block:'start'});return;}
+ const time=new Date();manualPending(db,p,v);syncTasks(db,p,v,time);if(p.visit){p.history ||= [];p.history.unshift(clone(p.visit));p.history=p.history.slice(0,50);}
+ v.savedAt=time.toISOString();v.taskSnapshot=openTasks(db,p.id).map(t=>t.text);v.schema=3;p.visit=clone(v);p.dirty=false;
+ p.visit.identity={bed:p.bed,code:p.code,record:p.record,sector:p.sector,diagnosis:p.diagnosis||''};
+ if(!persist()){toast('A visita está na memória, mas não foi gravada. Exporte um backup.');return;}
+ ui.reportId=p.id;ui.tab='evolucao';render();window.scrollTo(0,0);toast('Visita salva e evolução gerada. Confira antes de copiar.');
+}
+async function copyText(text){if(!text)return false;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return true;}}catch{}const ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.left='0';ta.style.top='0';ta.style.opacity='0';document.body.append(ta);ta.focus();ta.select();ta.setSelectionRange(0,text.length);let ok=false;try{ok=document.execCommand('copy');}catch{}ta.remove();return ok;}
+function download(name,content,type){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([content],{type}));a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+
+function assessmentUI(key,html,label='Avaliação'){
+ const v=visit(),status=v.assessments[key]||'';
+ const body=status==='Normal'?`<div class="quick-summary">✓ ${esc(normalSummary(v,key))}</div>`:status==='Alterado'||assessmentHasData(v,key)?`<div class="assessment-details">${html}</div>`:'<p class="muted">Selecione Normal ou Alterado para registrar esta avaliação.</p>';
+ return `<div class="quick-assessment" data-assessment="${key}">${choices('assessments.'+key,label,['Normal','Alterado'])}${!status?`<small class="normal-help">Normal: ${esc(ASSESSMENT_HELP[key])}</small>`:''}${body}</div>`;
+}
+function companionUI(){const g=visit().general;return `<div class="companion-start"><h3>Acompanhante</h3>${choices('general.companion','Presença',['Acompanhado','Sem acompanhante'])}${g.companion==='Acompanhado'?`<div class="grid">${input('general.compName','Nome do acompanhante')}${input('general.compRelation','Vínculo / grau de parentesco')}</div>`:''}</div>`;}
+function generalUI(){return `${assessmentUI('general',`<div class="grid">${choices('general.conscious','Estado de consciência',['Consciente','Sonolento','Obnubilado','Inconsciente'])}${choices('general.orientation','Orientação',['Orientado','Desorientado','Parcialmente orientado','Não avaliável'])}${choices('general.hydration','Hidratação',['Hidratado','Desidratado','Não avaliada'])}</div>${choices('general.pupils','Pupilas',['Isocóricas','Anisocóricas','Mióticas','Midriáticas'])}<div class="grid">${input('general.pupilRight','Diâmetro direito (mm)','number','min="0" max="12" step="0.1"')}${input('general.pupilLeft','Diâmetro esquerdo (mm)','number','min="0" max="12" step="0.1"')}${choices('general.reactRight','Fotorreação direita',['Presente','Ausente','Não avaliada'])}${choices('general.reactLeft','Fotorreação esquerda',['Presente','Ausente','Não avaliada'])}</div><div class="nested">${neuroUI()}</div>`)}<div class="grid">${choices('general.sleep','Sono referido',['Conseguiu dormir','Não conseguiu dormir','Sono interrompido'])}${choices('general.mattress','Colchão',['Pneumático','Piramidal','Viscoelástico','Outro'])}${visit().general.mattress==='Outro'?input('general.mattressOther','Qual colchão?'):''}</div>`;}
+function palliativeIndicator(p){const v=p.draft||p.visit;if(!(typeof p.palliative==='boolean'?p.palliative:v?.finish?.palliative))return '';return `<span class="palliative-indicator" title="Cuidados paliativos" aria-label="Cuidados paliativos: bolinha roxa e borboleta azul"><span class="palliative-dot"></span><svg class="blue-butterfly" viewBox="0 0 24 24" aria-hidden="true"><path fill="#269be0" d="M11 10C4 0-3 5 5 13c-7 2-2 11 6 2V10zm2 0C20 0 27 5 19 13c7 2 2 11-6 2V10z"/><path fill="#164d74" d="M11 8h2v12h-2zM11 8 8 4l1-1 3 4 3-4 1 1-3 4z"/></svg></span>`;}
+function fastingReminder(p){const current=p.draft?.nutrition,previous=!arr(current?.routes).length&&p.visit?.nutrition,n=previous||current||p.visit?.nutrition;if(!arr(n?.routes).includes('Jejum'))return '';const label=n.fastingKind==='Clínico'?'Clínico':n.fastingKind?(n.fastingKind+(n.awaiting?' · '+n.awaiting:'')):n.reason||'Motivo não informado';return `<div class="fasting-reminder"><strong>JEJUM</strong><span>${esc(label)}${previous?' · Último registro, conferir na visita':''}</span></div>`;}
+function diagnosisBox(p){return `<div class="patient-diagnosis"><strong>Diagnóstico</strong><span>${esc(p.diagnosis||'Não informado')}</span></div>`;}
+function patientCard(p){const pending=openTasks(db,p.id).length;return `<article class="card patient-card ${p.deletedAt?'deleted-patient':''}" data-patient-card="${p.id}"><header><span class="bed-number">${esc(p.bed)}</span>${palliativeIndicator(p)}<span class="badge ${p.deletedAt?'dim':p.status==='active'?'':'dim'}">${p.deletedAt?'Excluído':p.status==='active'?'Em acompanhamento':esc(p.status)}</span></header><h3>${esc(p.code)}</h3>${diagnosisBox(p)}<p class="muted">${esc(p.sector)}<br>Registro: ${esc(p.record||'não informado')}</p>${fastingReminder(p)}<div class="patient-card-status"><span class="badge ${pending?'warn':'dim'}">${pending} pendência(s)</span><small>${p.visit?'Visita: '+stampBR(p.visit.savedAt):'Sem visita salva'}${p.dirty?' · Rascunho':''}</small></div><div class="actions">${p.deletedAt?btn('Restaurar cadastro','restore-patient',`data-id="${p.id}"`,''):p.status==='active'?btn('Abrir visita','open-patient',`data-id="${p.id}"`,''):''}${btn('Editar','admission-edit',`data-id="${p.id}"`,'ghost small')}${!p.deletedAt&&p.visit?btn('Evolução','open-report',`data-id="${p.id}"`,'secondary small'):''}${!p.deletedAt?btn('Excluir','delete-patient',`data-id="${p.id}"`,'danger small'):''}</div>${!p.deletedAt&&p.status==='active'?`<div class="field"><label>Desfecho</label><select data-outcome="${p.id}" aria-label="Desfecho do leito ${esc(p.bed)}"><option value="">Selecionar…</option><option>Alta</option><option>Transferência</option><option>Óbito</option></select></div>`:''}</article>`;}
+
+$('#app').addEventListener('click',async e=>{
+ const chip=e.target.closest('[data-choice]');if(chip){const path=chip.dataset.choice;let next=chip.dataset.clear?(chip.dataset.multi?[]:''):chip.dataset.value;
+  if(chip.dataset.multi&&!chip.dataset.clear){let xs=[...arr(value(visit(),path))];next=xs.includes(next)?xs.filter(x=>x!==next):[...xs,next];
+   const selected=chip.dataset.value;
+   if(path==='nutrition.routes'&&next.includes(selected)){next=selected==='Jejum'?['Jejum']:next.filter(x=>x!=='Jejum');}
+   if(path==='skin.colors'&&next.includes(selected))for(const [x,y] of [['Corado','Hipocorado'],['Cianótico','Acianótico'],['Ictérico','Anictérico']])if([x,y].includes(selected))next=next.filter(i=>i!==(selected===x?y:x));
+   if(path.endsWith('.dressing.state')&&next.includes(selected))next=selected==='Íntegro'?['Íntegro']:next.filter(x=>x!=='Íntegro');
+  }
+  applyChange(path,next);render();return;
+ }
+ const b=e.target.closest('[data-action]');if(!b)return;const action=b.dataset.action,v=visit(),p=patient();
+ if(action==='nav'){navigate(b.dataset.tab);return;}
+ if(action==='admission-new'||action==='admission-edit'){startAdmission(b.dataset.id);return;}
+ if(action==='close-modal'){ui.modal=null;ui.admission=null;ui.batchText='';render();return;}
+ if(action==='admission-save'){
+  const a=ui.admission;if(!a.bed.trim()||!a.code.trim()){toast('Preencha leito e identificação.');return;}
+  const duplicate=activePatients().find(p=>p.id!==a.id&&p.bed.trim().toUpperCase()===a.bed.trim().toUpperCase());if(duplicate){toast('Já existe um paciente ativo nesse leito. Edite ou registre o desfecho antes de outra admissão.');return;}
+  const exists=db.patients.find(p=>p.id===a.id);const target=exists||{id:uid(),status:'active',visit:null,draft:null,history:[]};
+  Object.assign(target,{bed:a.bed.trim().toUpperCase(),code:a.code.trim(),record:(a.record||'').trim(),diagnosis:(a.diagnosis||'').trim(),sector:a.sector,admission:{when:a.date?a.date+(a.time?'T'+a.time:''):'',origin:a.origin,reason:a.reason,notes:a.notes}});
+  if(!exists)db.patients.push(target);ui.current=target.id;ui.modal=null;ui.admission=null;persist();ui.tab=target.status==='active'&&!target.deletedAt?'visita':'painel';ui.open.clear();render();window.scrollTo(0,0);return;
+ }
+ if(action==='open-patient'){if(!activePatients().some(x=>x.id===b.dataset.id))return;syncCurrent();ui.current=b.dataset.id;ui.errors=[];ui.open.clear();navigate('visita');return;}
+ if(action==='open-report'){ui.reportId=b.dataset.id;navigate('evolucao');return;}
+ if(action==='delete-patient'){
+  const target=db.patients.find(x=>x.id===b.dataset.id&&!x.deletedAt);if(!target)return;
+  if(!confirm(`Excluir o cadastro do leito ${target.bed} · ${target.code}? Ele sairá dos quadros e poderá ser restaurado em Excluídos.`))return;
+  syncCurrent();target.deletedAt=new Date().toISOString();if(ui.current===target.id)ui.current=activePatients()[0]?.id||'';if(ui.reportId===target.id)ui.reportId='';ui.batchText='';ui.batchIds=ui.batchIds.filter(id=>id!==target.id);ui.tab='painel';persist();toast('Cadastro excluído. Você pode restaurá-lo no filtro Excluídos.');return;
+ }
+ if(action==='restore-patient'){
+  const target=db.patients.find(x=>x.id===b.dataset.id&&x.deletedAt);if(!target)return;
+  if(target.status==='active'&&activePatients().some(x=>x.bed.toUpperCase()===target.bed.toUpperCase()))return toast('Este leito já está ocupado. Edite o leito do cadastro excluído antes de restaurar.');
+  delete target.deletedAt;ui.filter=target.status==='active'?'active':'all';syncTasks(db,target,target.draft||target.visit||blankVisit());persist();toast('Cadastro restaurado com suas visitas e pendências.');return;
+ }
+ if(action==='no-devices'){if(v.devices.length)return toast('Remova os dispositivos cadastrados antes de registrar ausência.');v.deviceStatus='Sem dispositivos';p.dirty=true;syncCurrent();render();return;}
+ if(action==='new-round'){if(!p)return;if(!confirm('Iniciar nova visita? Os dados da visita salva serão preservados no histórico. Os achados e confirmações devem ser avaliados novamente.'))return;const before=clone(v);p.draft=freshRound(before);p.draft.carryTaskKeys=openTasks(db,p.id).filter(t=>t.autoKey).map(t=>t.autoKey);p.dirty=true;ui.errors=[];syncCurrent();render();window.scrollTo(0,0);return;}
+ if(action==='add-sound')v.respiratory.sounds.push({id:uid(),type:'',sites:[]});
+ if(action==='add-wound'){v.assessments.skin='Alterado';v.skin.integrity='Lesões presentes';v.skin.wounds.push({id:uid(),type:b.dataset.type,site:'',side:'',stage:'',dressing:'',description:'',needsChange:false});}
+ if(action==='add-phlebitis'){v.assessments.skin='Alterado';v.skin.phlebitis.push({id:uid(),site:'',side:'',grade:'',hirudoid:'',camomila:''});}
+ if(action==='toggle-prevention'){
+  ui.open.add('prevention');if(!v.skin.prevention.length)v.skin.prevention=['Região sacral','Trocânter direito','Trocânter esquerdo','Calcanhar direito','Calcanhar esquerdo'].map(site=>({id:uid(),site,status:'',date:'',unknown:false}));
+ }
+ if(action==='add-device'){addDevice(b.dataset.type,b.dataset.link);v.deviceStatus='Cadastrados';}
+ if(action==='remove-device'){
+  const d=v.devices.find(x=>x.id===b.dataset.id);if(!d)return;
+  const linked=v.infusions.some(x=>x.deviceId===d.id)||v.nutrition.deviceId===d.id||v.urinary.deviceId===d.id;
+  if(!confirm('Remover '+deviceLabel(d)+'?'+(linked?' Os vínculos com este dispositivo serão desfeitos.':'')))return;
+  v.carryTaskKeys=arr(v.carryTaskKeys).filter(k=>!k.endsWith(':'+d.id));v.devices=v.devices.filter(x=>x.id!==d.id);v.infusions.forEach(i=>{if(i.deviceId===d.id)i.deviceId='';});if(v.nutrition.deviceId===d.id)v.nutrition.deviceId='';if(v.urinary.deviceId===d.id)v.urinary.deviceId='';
+ }
+ if(action==='remove-row'){const list=value(v,b.dataset.list);if(Array.isArray(list))list.splice(Number(b.dataset.index),1);}
+ if(action==='add-infusion')v.infusions.push({id:uid(),name:'',rate:'',date:'',time:'',deviceId:''});
+ if(action==='next-manual-task'){manualPending(db,p,v);v.manualTask='';v.id=uid();}
+ if(action==='save-visit'){saveVisit();return;}
+ if(action==='task-done'||action==='task-reopen'){const t=db.tasks.find(t=>t.id===b.dataset.id);if(t){t.done=action==='task-done';t.doneAt=t.done?new Date().toISOString():null;t.resolved=false;}persist();render();return;}
+ if(action==='export-json'){syncCurrent();download('ronda-backup-'+localISO().slice(0,10)+'.json',JSON.stringify(db,null,2),'application/json');return;}
+ if(action==='copy-one'){const selected=db.patients.find(x=>x.id===ui.reportId);if(!selected?.visit||selected.deletedAt)return toast('Salve uma visita primeiro.');const ok=await copyText(buildReport(selected).text);toast(ok?'Evolução copiada: leito '+selected.bed+' · '+selected.code+'.':'Cópia bloqueada pelo navegador. Selecione o texto da evolução manualmente.');return;}
+ if(action==='batch-open'){ui.batchIds=activePatients().filter(p=>p.visit?.savedAt).map(p=>p.id);ui.batchText='';ui.modal='batch';render();return;}
+ if(action==='batch-preview'){ui.batchText=batchReport(activePatients().filter(p=>ui.batchIds.includes(p.id)));render();return;}
+ if(action==='batch-copy'){if(!ui.batchText)return;const ok=await copyText(ui.batchText);if(ok)toast('Bloco copiado com '+ui.batchIds.length+' evolução(ões) identificada(s).');else{$('#batch-copy-text')?.focus();$('#batch-copy-text')?.select();toast('Selecione e copie o texto da prévia manualmente.');}return;}
+ if(action==='print'){window.print();return;}
+ if(p){p.dirty=true;syncCurrent();}render();
+});
+$('#app').addEventListener('input',e=>{
+ const x=e.target;if(x.dataset.admission){ui.admission[x.dataset.admission]=x.value;return;}
+ if(x.dataset.field&&x.type!=='checkbox'&&x.tagName!=='SELECT'){
+  if(x.type==='number'&&!x.validity.valid)return;
+  applyChange(x.dataset.field,x.value);const status=$('#draft-status');if(status)status.textContent=ui.storageError?'Não foi possível salvar — exporte backup':'Rascunho salvo neste aparelho';const summary=$('#visit-task-summary');if(summary)summary.innerHTML=currentTaskSummary();return;
+ }
+ if(x.hasAttribute('data-search')){ui.search=x.value;const pos=x.selectionStart;render();const next=$('[data-search]');next.focus();next.setSelectionRange(pos,pos);}
+});
+$('#app').addEventListener('change',async e=>{
+ const x=e.target;
+ if(x.dataset.admission){ui.admission[x.dataset.admission]=x.value;return;}
+ if(x.dataset.field){if(x.type==='checkbox'||x.tagName==='SELECT'){applyChange(x.dataset.field,x.type==='checkbox'?x.checked:x.value);render();}else if(x.type!=='number'||x.validity.valid){applyChange(x.dataset.field,x.value);}return;}
+ if(x.hasAttribute('data-switch-patient')){syncCurrent();ui.current=x.value;ui.errors=[];ui.open.clear();render();return;}
+ if(x.hasAttribute('data-patient-filter')){ui.filter=x.value;render();return;}
+ if(x.hasAttribute('data-report-patient')){ui.reportId=x.value;render();return;}
+ if(x.dataset.batchId){ui.batchIds=x.checked?[...ui.batchIds,x.dataset.batchId]:ui.batchIds.filter(id=>id!==x.dataset.batchId);ui.batchText='';render();return;}
+ if(x.dataset.manualFor&&x.value.trim()){db.tasks.push({id:uid(),patientId:x.dataset.manualFor,text:x.value.trim(),done:false,createdAt:new Date().toISOString()});persist();x.value='';render();return;}
+ if(x.dataset.setting){const n=Number(x.value);if(!Number.isInteger(n)||n<1||n>(x.dataset.setting==='avpHours'?720:30)){toast('Informe um prazo válido.');return;}db.settings[x.dataset.setting]=n;activePatients().forEach(p=>syncTasks(db,p,p.draft||p.visit||blankVisit()));persist();render();return;}
+ if(x.dataset.outcome&&x.value){const p=db.patients.find(p=>p.id===x.dataset.outcome);if(confirm('Registrar '+x.value+' do leito '+p.bed+' · '+p.code+'?')){p.status=x.value;p.outcomeAt=new Date().toISOString();if(ui.current===p.id)ui.current=activePatients()[0]?.id||'';persist();}render();return;}
+ if(x.id==='import-backup'&&x.files?.[0]){try{const file=x.files[0];if(file.size>15_000_000)throw Error('Arquivo maior que 15 MB.');const data=normalizeDB(JSON.parse(await file.text()));if(!confirm(`Importar ${data.patients.length} paciente(s)? O conteúdo atual será substituído. Exporte um backup antes, se necessário.`))return;db=data;loadProblem='';ui.current=activePatients()[0]?.id||'';ui.tab='painel';ui.open.clear();persist();toast('Backup importado. Confira os cadastros e as visitas.');}catch(err){toast('Não foi possível importar: '+err.message);}return;}
+});
+$('#app').addEventListener('toggle',e=>{if(!e.target.isConnected||!e.target.dataset.open)return;const key=e.target.dataset.open;if(e.target.open)ui.open.add(key);else ui.open.delete(key);},true);
+window.addEventListener('pagehide',()=>{syncCurrent();});
+window.addEventListener('beforeprint',()=>{ui.tab='evolucao';render();});
+window.addEventListener('online',()=>{if('serviceWorker'in navigator)navigator.serviceWorker.getRegistration().then(r=>r?.update());});
+setInterval(()=>{activePatients().forEach(p=>syncTasks(db,p,p.draft||p.visit||blankVisit()));persist();if(['painel','pendencias'].includes(ui.tab)&&document.activeElement?.tagName!=='INPUT'&&document.activeElement?.tagName!=='TEXTAREA')render();},60000);
+render();
+if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{});
+</script></body></html>
